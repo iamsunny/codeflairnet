@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tips n Tricks &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/tips-n-tricks/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Tips n Tricks &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>A new guard page for stack cannot be created- ASP.NET MVC4 Error</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/#respond</comments>
+				<pubDate>Fri, 07 Feb 2014 13:08:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[ASP.NET]]></category>
+		<category><![CDATA[ASP.NET MVC4]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Tips n Tricks]]></category>
+		<category><![CDATA[Troubleshooting]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error</guid>
+				<description><![CDATA[An hour back I was working with ASP.NET and encountered with this pretty error. I kept wandering for about ten minutes what really has happened. My iisexpress.exe was automatically shut down and it didn&#8217;t work when I kept hitting CTRL+F5. How I solved it:Later i the process I came to know that I had the &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/" class="more-link">Continue reading<span class="screen-reader-text"> "A new guard page for stack cannot be created- ASP.NET MVC4 Error"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Creating Reusable and Scalable Calendar Icon in HTML5 and CSS3</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/12/23/creating-reusable-and-scalable-calendar-icon-in-html5-and-css3/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/12/23/creating-reusable-and-scalable-calendar-icon-in-html5-and-css3/#respond</comments>
+				<pubDate>Mon, 23 Dec 2013 05:46:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[Tips n Tricks]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/12/23/creating-reusable-and-scalable-calendar-icon-in-html5-and-css3</guid>
+				<description><![CDATA[This article explains how tro create a calendar icon for your blog or website, and yes, it is scalable, so you can resize it to any ratio and it will not be blurred just by changing a font-size.  You’re free to change the color/size of the text or an icon or anything as you prefer. &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/12/23/creating-reusable-and-scalable-calendar-icon-in-html5-and-css3/" class="more-link">Continue reading<span class="screen-reader-text"> "Creating Reusable and Scalable Calendar Icon in HTML5 and CSS3"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/12/23/creating-reusable-and-scalable-calendar-icon-in-html5-and-css3/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How to copy text from command prompt</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/05/13/how-to-copy-text-from-command-prompt/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/05/13/how-to-copy-text-from-command-prompt/#respond</comments>
+				<pubDate>Mon, 13 May 2013 19:02:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Tips n Tricks]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/05/13/how-to-copy-text-from-command-prompt</guid>
+				<description><![CDATA[Hi folks! Here I&#8217;m sharing a useful tip that will help you speed up your work. Many of us want to copy the text from within Console or CMD but they do not know how to do it (even I was not aware of this around a while ago). This is really very simple yet &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/05/13/how-to-copy-text-from-command-prompt/" class="more-link">Continue reading<span class="screen-reader-text"> "How to copy text from command prompt"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/05/13/how-to-copy-text-from-command-prompt/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

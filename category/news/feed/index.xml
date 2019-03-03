@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>NEWS &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/news/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>NEWS &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>The Programmers- Second Edition is out</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/07/27/the-programmers-second-edition-is-out/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/07/27/the-programmers-second-edition-is-out/#respond</comments>
+				<pubDate>Sat, 27 Jul 2013 10:51:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[NEWS]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/07/27/the-programmers-second-edition-is-out</guid>
+				<description><![CDATA[The Programmers &#8211; 2nd Edition is out , click here:http://www.sukesh-marla.com/2013/07/the-programmer-edition2-is-out.html I had it&#8217;s first edition @ C# Corner MVP Summit and it contained really helping articles and other contents. Do seek for second edition as it seems to be having much more, even I&#8217;m really excited to grab the second edition. Follow here on FB to &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/07/27/the-programmers-second-edition-is-out/" class="more-link">Continue reading<span class="screen-reader-text"> "The Programmers- Second Edition is out"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/07/27/the-programmers-second-edition-is-out/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

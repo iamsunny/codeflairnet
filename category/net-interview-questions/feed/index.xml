@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>.NET Interview Questions &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/net-interview-questions/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>.NET Interview Questions &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What is CLR (Common Language Runtime)?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-clr-common-language-runtime/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-clr-common-language-runtime/#respond</comments>
+				<pubDate>Thu, 12 Sep 2013 20:55:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[.NET Interview Questions]]></category>
+		<category><![CDATA[C#]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/09/12/what-is-clr-common-language-runtime</guid>
+				<description><![CDATA[CLR is a part of .NET Framework which manages the execution of several supported .NET languages, allowing them to share Common Object-Oriented Classes. CLR is somewhat comparable to Java Virtual Machine. Microsoft refers to its Common Language Runtime as &#8220;Managed Execution Environment&#8220;. CLR held responsible for these important activities: Garbage Collection: CLR automatically manages memory, thus eliminating &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-clr-common-language-runtime/" class="more-link">Continue reading<span class="screen-reader-text"> "What is CLR (Common Language Runtime)?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-clr-common-language-runtime/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>What is Native Image Generator (Ngen.exe) and how does it work?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/09/11/what-is-native-image-generator-ngen-exe-and-how-does-it-work/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/09/11/what-is-native-image-generator-ngen-exe-and-how-does-it-work/#respond</comments>
+				<pubDate>Wed, 11 Sep 2013 18:44:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[.NET Interview Questions]]></category>
+		<category><![CDATA[C#]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/09/11/what-is-native-image-generator-ngen-exe-and-how-does-it-work</guid>
+				<description><![CDATA[Ngen.exe (Native Image Generator) is a tool that creates native images, which are files containing compiled Processor-Specific machine code, and installs them into the native image cache on the local computer. It&#8217;s a tool that improves the performance of managed applications. In other words, rather than compiling the code dynamically using JIT on runtime, a &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/09/11/what-is-native-image-generator-ngen-exe-and-how-does-it-work/" class="more-link">Continue reading<span class="screen-reader-text"> "What is Native Image Generator (Ngen.exe) and how does it work?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/09/11/what-is-native-image-generator-ngen-exe-and-how-does-it-work/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>What are different types of JIT?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/09/10/what-are-different-types-of-jit/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/09/10/what-are-different-types-of-jit/#respond</comments>
+				<pubDate>Tue, 10 Sep 2013 19:08:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[.NET Interview Questions]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/09/10/what-are-different-types-of-jit</guid>
+				<description><![CDATA[There are 3 types of JIT compiler in .NET: Normal JIT: It&#8217;s the Default or Standard JIT compiler which compiles only those methods that are called at runtime. These methods are compiled the first time they are called, and are stored thereafter in cache. This compiled code is served from cache on all further calls &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/09/10/what-are-different-types-of-jit/" class="more-link">Continue reading<span class="screen-reader-text"> "What are different types of JIT?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/09/10/what-are-different-types-of-jit/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How does JIT compiler work?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/09/09/how-does-jit-compiler-work/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/09/09/how-does-jit-compiler-work/#respond</comments>
+				<pubDate>Mon, 09 Sep 2013 18:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[.NET Interview Questions]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/09/09/how-does-jit-compiler-work</guid>
+				<description><![CDATA[Just in time compiler (JIT) compiles the code just before execution and saves the compiled code in memory. It can compile per-file, per-function or a code fragment. Refer to the picture below:]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/09/09/how-does-jit-compiler-work/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>What is IL Code?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/09/08/what-is-il-code/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/09/08/what-is-il-code/#respond</comments>
+				<pubDate>Sun, 08 Sep 2013 18:57:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[.NET Interview Questions]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/09/08/what-is-il-code</guid>
+				<description><![CDATA[IL (Intermediate Language) Code is CPU independent partially/half compiled code. Partially means this code is not compiled to machine/CPU specific instructions. The reason behind it&#8217;s not fully compiled is: we do not know in what kind of environment .NET code will run i.e. what can be the end operating system, CPU configuration, machine configuration, security &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/09/08/what-is-il-code/" class="more-link">Continue reading<span class="screen-reader-text"> "What is IL Code?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/09/08/what-is-il-code/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

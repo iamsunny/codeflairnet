@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Uncategorized &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Uncategorized &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Getting Started with Ignite UI igGrid</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/07/04/getting-started-with-ignite-ui-iggrid/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/07/04/getting-started-with-ignite-ui-iggrid/#respond</comments>
+				<pubDate>Mon, 04 Jul 2016 06:47:51 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Ignite UI]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[igGrid]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/?p=375</guid>
+				<description><![CDATA[I received an Infragistics Ultimate subscription yesterday and I&#8217;m really happy about it. It is gifted to every C# Corner MVP. Thank you Casey McGuigan, Infragistics, for the lovely gift and C# Corner for making it happen. &#160; and I was like, Thus, I happily headed to Infragistics.com, redeemed my coupon and I had the subscription activated &#8230; <a href="https://iamsunny.github.io/codeflairnet/2016/07/04/getting-started-with-ignite-ui-iggrid/" class="more-link">Continue reading<span class="screen-reader-text"> "Getting Started with Ignite UI igGrid"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/07/04/getting-started-with-ignite-ui-iggrid/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>MySQL – ELT() and FILED() Functions to Extract Index Position From List</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/03/26/mysql-elt-and-filed-functions-to-extract-index-position-from-list/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/03/26/mysql-elt-and-filed-functions-to-extract-index-position-from-list/#respond</comments>
+				<pubDate>Sat, 26 Mar 2016 18:14:53 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Repost]]></category>
+
+		<guid isPermaLink="false">http://codeflair.net/?p=322</guid>
+				<description><![CDATA[MySQL supports some functions that can be used to extract the index position or the actual value from a set of values arranged as an array. ELT() and FIELD() are example of such functions. Let us understand about them in details. Source: MySQL – ELT() and FILED() Functions to Extract Index Position From List]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/03/26/mysql-elt-and-filed-functions-to-extract-index-position-from-list/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

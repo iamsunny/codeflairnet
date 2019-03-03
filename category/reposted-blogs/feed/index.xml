@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Repost &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/reposted-blogs/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Repost &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Different ways of injecting dependency in an AngularJS Application</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/03/25/different-ways-of-injecting-dependency-in-an-angularjs-application/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/03/25/different-ways-of-injecting-dependency-in-an-angularjs-application/#respond</comments>
+				<pubDate>Fri, 25 Mar 2016 03:13:43 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Repost]]></category>
+
+		<guid isPermaLink="false">http://codeflair.net/?p=320</guid>
+				<description><![CDATA[When you start learning the very first characteristics of AngularJS, you may come across something called Dependency Injection (DI): the premise that AngularJS injects dependencies whenever an appl… Source: Different ways of injecting dependency in an AngularJS Application]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/03/25/different-ways-of-injecting-dependency-in-an-angularjs-application/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Calling current project methods from C# Interactive Window in Visual Studio 2015 ?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/03/25/calling-current-project-methods-from-c-interactive-window-in-visual-studio-2015/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/03/25/calling-current-project-methods-from-c-interactive-window-in-visual-studio-2015/#respond</comments>
+				<pubDate>Fri, 25 Mar 2016 03:13:13 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Repost]]></category>
+
+		<guid isPermaLink="false">http://codeflair.net/?p=318</guid>
+				<description><![CDATA[The C# Interactive Window in Visual Studio is a great utility to play around the code, language features, API’s and other .NET framework features. The Interactive Window also support features like … Source: Calling current project methods from C# Interactive Window in Visual Studio 2015 ?]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/03/25/calling-current-project-methods-from-c-interactive-window-in-visual-studio-2015/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>12 tips to increase the performance of ASP.NET application drastically – Part 1</title>
+		<link>https://iamsunny.github.io/codeflairnet/2015/08/11/12-tips-to-increase-the-performance-of-asp-net-application-drastically-part-1/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2015/08/11/12-tips-to-increase-the-performance-of-asp-net-application-drastically-part-1/#respond</comments>
+				<pubDate>Tue, 11 Aug 2015 09:23:32 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Repost]]></category>
+
+		<guid isPermaLink="false">http://codeflair.net/2015/08/11/12-tips-to-increase-the-performance-of-asp-net-application-drastically-part-1/</guid>
+				<description><![CDATA[Interesting Read!]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2015/08/11/12-tips-to-increase-the-performance-of-asp-net-application-drastically-part-1/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

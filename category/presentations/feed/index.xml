@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Presentations &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/presentations/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Presentations &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Presented on Javascript Best Practices</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/07/16/presented-on-javascript-best-practices/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/07/16/presented-on-javascript-best-practices/#respond</comments>
+				<pubDate>Sat, 16 Jul 2016 14:23:09 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Presentations]]></category>
+		<category><![CDATA[JavaScript Best Practices]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=397</guid>
+				<description><![CDATA[Today we organized a user group meet at C# Corner &#8211; Delhi Chapter with sessions based on  MVC, Azure, JavaScript and AngularJS. I spoke on JavaScript Best Practices. Much appreciate the learning spirit of the attendees as they made it out even in the rain. Hats off to you guys! We discussion the DOs and DONTs of common &#8230; <a href="https://iamsunny.github.io/codeflairnet/2016/07/16/presented-on-javascript-best-practices/" class="more-link">Continue reading<span class="screen-reader-text"> "Presented on Javascript Best Practices"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/07/16/presented-on-javascript-best-practices/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Presented Microsoft Azure DocumentDB at Global Azure Bootcamp 2016</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/04/16/presented-microsoft-azure-documentdb-at-global-azure-bootcamp-2016/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/04/16/presented-microsoft-azure-documentdb-at-global-azure-bootcamp-2016/#respond</comments>
+				<pubDate>Sat, 16 Apr 2016 20:22:38 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Presentations]]></category>
+		<category><![CDATA[DocumentDB]]></category>
+		<category><![CDATA[Microsoft Azure Bootcamp 2016]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=361</guid>
+				<description><![CDATA[It was a great show at Global Azure Bootcamp, happening worldwide,  organized at C# Corner &#8211; Delhi Chapter (in Noida). We had a very successful event. I presented on Microsoft Azure DocumentDB. Here are few clicks from the session, and the slide deck &#8211; just in case you attended and want it for reference. Clicks from &#8230; <a href="https://iamsunny.github.io/codeflairnet/2016/04/16/presented-microsoft-azure-documentdb-at-global-azure-bootcamp-2016/" class="more-link">Continue reading<span class="screen-reader-text"> "Presented Microsoft Azure DocumentDB at Global Azure Bootcamp 2016"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/04/16/presented-microsoft-azure-documentdb-at-global-azure-bootcamp-2016/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Presented on &#8220;HTML5 Offline Applications&#8221;</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/09/15/presented-on-html5-offline-applications/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/09/15/presented-on-html5-offline-applications/#respond</comments>
+				<pubDate>Mon, 15 Sep 2014 10:43:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[C# Corner]]></category>
+		<category><![CDATA[HTML5 Offline Applications]]></category>
+		<category><![CDATA[Presentations]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/09/15/presented-on-html5-offline-applications</guid>
+				<description><![CDATA[It was an exciting weekend on 13th Sep&#8230; presented &#8220;HTML5 Offline Applications&#8221; at C# Corner-Delhi Chapter.It was great to see the audience excited about the topic, they were really very attentive! Few glimpses from the event: Here are the slides that we talked and enjoyed about! [slideshare id=39084542&#38;w=800&#38;h=620&#38;style=border-width: 1px; border: 1px solid #CCC; margin-bottom: 5px; &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/09/15/presented-on-html5-offline-applications/" class="more-link">Continue reading<span class="screen-reader-text"> "Presented on &#8220;HTML5 Offline Applications&#8221;"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/09/15/presented-on-html5-offline-applications/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

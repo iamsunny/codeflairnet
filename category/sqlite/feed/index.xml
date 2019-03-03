@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>SQLite &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/sqlite/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>SQLite &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to maintain concurrency in SQLite Database</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/06/19/how-to-maintain-concurrency-in-sqlite-database/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/06/19/how-to-maintain-concurrency-in-sqlite-database/#respond</comments>
+				<pubDate>Wed, 19 Jun 2013 16:06:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[SQLite]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/06/19/how-to-maintain-concurrency-in-sqlite-database</guid>
+				<description><![CDATA[If you&#8217;re planning to use embedded database for your small data needs, SQLite is just a go to option. It&#8217;s faster, supports transactional (ACID) queries.SQLite FAQs page says-&#8220;&#8230; no other embedded SQL database engine that supports as much concurrency as SQLite. SQLite allows multiple processes to have the database file open at once, and for &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/06/19/how-to-maintain-concurrency-in-sqlite-database/" class="more-link">Continue reading<span class="screen-reader-text"> "How to maintain concurrency in SQLite Database"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/06/19/how-to-maintain-concurrency-in-sqlite-database/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

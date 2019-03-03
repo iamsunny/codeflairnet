@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>MISC &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/misc/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>MISC &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>my first post on Medium</title>
+		<link>https://iamsunny.github.io/codeflairnet/2018/03/13/my-first-post-on-medium/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2018/03/13/my-first-post-on-medium/#respond</comments>
+				<pubDate>Tue, 13 Mar 2018 07:09:15 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=677</guid>
+				<description><![CDATA[I added my first story on medium yesterday, check it out here: https://medium.com/@sunny_sharma/does-configureawait-false-help-executing-async-await-tasks-in-parallel-98c2615f7ff8 &#160; &#160; &#160;]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2018/03/13/my-first-post-on-medium/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Awarded &#8211; Microsoft MVP 2nd time in a row</title>
+		<link>https://iamsunny.github.io/codeflairnet/2017/07/01/awarded-microsoft-mvp-2nd-time-in-a-row/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2017/07/01/awarded-microsoft-mvp-2nd-time-in-a-row/#respond</comments>
+				<pubDate>Sat, 01 Jul 2017 17:49:46 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=613</guid>
+				<description><![CDATA[Gladly sharing that I&#8217;m awarded Microsoft MVP 2nd time in a row. Thank you Microsoft for the recognition again. I want to extend my thanks to all my friends and whosoever has supported me along the way! Thank you. Microsoft Most Valuable Professional (MVP) award is given to &#8220;exceptional, independent community leaders who share their passion, technical &#8230; <a href="https://iamsunny.github.io/codeflairnet/2017/07/01/awarded-microsoft-mvp-2nd-time-in-a-row/" class="more-link">Continue reading<span class="screen-reader-text"> "Awarded &#8211; Microsoft MVP 2nd time in a row"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2017/07/01/awarded-microsoft-mvp-2nd-time-in-a-row/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>[Quick Tip]: Use Windows Explorer address bar for &#8220;commands&#8221;</title>
+		<link>https://iamsunny.github.io/codeflairnet/2017/01/28/quick-tip-use-windows-explorer-address-bar-for-commands/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2017/01/28/quick-tip-use-windows-explorer-address-bar-for-commands/#respond</comments>
+				<pubDate>Sat, 28 Jan 2017 20:09:26 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+		<category><![CDATA[Quick Tip]]></category>
+		<category><![CDATA[Windows Explorer]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=481</guid>
+				<description><![CDATA[Even though you&#8217;re a Windows OS user for a very long time I&#8217;m sure you would love to know this! Here&#8217;s a quick tip that you might unaware of so far. &#160; You can use Windows Explorer&#8217;s Address Bar just like you use Run Command: Under any window while browsing files on your computer just point your &#8230; <a href="https://iamsunny.github.io/codeflairnet/2017/01/28/quick-tip-use-windows-explorer-address-bar-for-commands/" class="more-link">Continue reading<span class="screen-reader-text"> "[Quick Tip]: Use Windows Explorer address bar for &#8220;commands&#8221;"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2017/01/28/quick-tip-use-windows-explorer-address-bar-for-commands/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Session Recap: Learn Building a Website with Node.js and Express.js</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/06/19/session-recap-learn-building-a-website-with-node-js-and-express-js/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/06/19/session-recap-learn-building-a-website-with-node-js-and-express-js/#respond</comments>
+				<pubDate>Sun, 19 Jun 2016 15:23:22 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+		<category><![CDATA[Speakings]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=376</guid>
+				<description><![CDATA[Here&#8217;s a recap of the session &#8211; &#8220;Learn Building a Website with Node.js and Express&#8220; held at C# Corner Delhi Chapter today (2016-06-19, Sunday). Attendees where mostly new to Node.js architecture and how it works. We started with Node Zero and went to building a web application using node.js and express. We also touched MongoDB  for &#8230; <a href="https://iamsunny.github.io/codeflairnet/2016/06/19/session-recap-learn-building-a-website-with-node-js-and-express-js/" class="more-link">Continue reading<span class="screen-reader-text"> "Session Recap: Learn Building a Website with Node.js and Express.js"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/06/19/session-recap-learn-building-a-website-with-node-js-and-express-js/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>What is Linting?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2015/05/06/what-is-linting/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2015/05/06/what-is-linting/#respond</comments>
+				<pubDate>Tue, 05 May 2015 21:11:32 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+		<category><![CDATA[Linter]]></category>
+		<category><![CDATA[Linting]]></category>
+
+		<guid isPermaLink="false">http://codeflair.net/?p=220</guid>
+				<description><![CDATA[Linting is a process of running a program to analyse your code for potential syntax errors. lint was the name originally given to a particular program that flagged some suspicious and non-portable constructs (likely to be bugs) in C language source code. The term is now applied generically to tools that flag suspicious usage in software written &#8230; <a href="https://iamsunny.github.io/codeflairnet/2015/05/06/what-is-linting/" class="more-link">Continue reading<span class="screen-reader-text"> "What is Linting?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2015/05/06/what-is-linting/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>What is a Business Model?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/05/05/what-is-a-business-model/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/05/05/what-is-a-business-model/#respond</comments>
+				<pubDate>Mon, 05 May 2014 12:28:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Business Model]]></category>
+		<category><![CDATA[MISC]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/05/05/what-is-a-business-model</guid>
+				<description><![CDATA[A Business model is a set of planned activities designed to result in a profit in the marketplace. Business Strategy and Market Competition are the major factors of a business model.  Image Courtesy: http://commons.wikimedia.org/ Image courtesy- Canvas.Network eCommrce MOOC]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/05/05/what-is-a-business-model/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>What is &#8220;Nightly Build&#8221; version of softwares? What does it mean?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/29/what-is-nightly-build-version-of-softwares-what-does-it-mean/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/29/what-is-nightly-build-version-of-softwares-what-does-it-mean/#respond</comments>
+				<pubDate>Wed, 29 Jan 2014 12:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+		<category><![CDATA[Nightly Build]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/29/what-is-nightly-build-version-of-softwares-what-does-it-mean</guid>
+				<description><![CDATA[I always keep trying latest applications of my interest in market from internet and often came across this scary word and for many softwares that I downloaded without knowing whether it&#8217;s a fully working or pre-release or anything else, had this title as &#8220;Nightly Build&#8221; version of X software. Probably I was frightened of any &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/29/what-is-nightly-build-version-of-softwares-what-does-it-mean/" class="more-link">Continue reading<span class="screen-reader-text"> "What is &#8220;Nightly Build&#8221; version of softwares? What does it mean?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/29/what-is-nightly-build-version-of-softwares-what-does-it-mean/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How to enable Developer Options in Android 4.2</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/05/how-to-enable-developer-options-in-android-4-2/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/05/how-to-enable-developer-options-in-android-4-2/#respond</comments>
+				<pubDate>Sun, 05 Jan 2014 11:17:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[MISC]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/05/how-to-enable-developer-options-in-android-4-2</guid>
+				<description><![CDATA[Developer Options in Android 4.2 (Jelly Bean) is hidden by default so you won&#8217;t be able to see this setting in &#8220;Settings &#62; More &#62; &#8230;&#8221; or anywhere in mobile settings. To enable it, you need to go to &#8220;Settings &#62; About Device&#8221; and Tap 7 times on &#8220;Build number&#8221; and that&#8217;s all. Your Developer option is &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/05/how-to-enable-developer-options-in-android-4-2/" class="more-link">Continue reading<span class="screen-reader-text"> "How to enable Developer Options in Android 4.2"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/05/how-to-enable-developer-options-in-android-4-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Free Exam Voucher &#8211; Microsoft Virtualization Server</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/12/24/free-exam-voucher-microsoft-virtualization-server/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/12/24/free-exam-voucher-microsoft-virtualization-server/#respond</comments>
+				<pubDate>Tue, 24 Dec 2013 09:04:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[MISC]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/12/24/free-exam-voucher-microsoft-virtualization-server</guid>
+				<description><![CDATA[Request a free voucher here: http://www.microsoftvirtualacademy.com/offers/virtualizationsquaredofferHurry as the stocks are limited !!]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/12/24/free-exam-voucher-microsoft-virtualization-server/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>What is Cell Broadcast Message?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-cell-broadcast-message/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-cell-broadcast-message/#respond</comments>
+				<pubDate>Thu, 12 Sep 2013 05:41:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/09/12/what-is-cell-broadcast-message</guid>
+				<description><![CDATA[Cell Broadcast is a term used in Telecom that means to send a particular information to all the users within a certain area at once, and this information is called Cell Broadcast Message. This can be used, for example, for providing the traffic reports, weather reports etc.  To create a Cell Broadcast Message, the sender &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-cell-broadcast-message/" class="more-link">Continue reading<span class="screen-reader-text"> "What is Cell Broadcast Message?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-cell-broadcast-message/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

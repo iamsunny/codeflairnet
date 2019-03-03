@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Sublime Text &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/sublime-text/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Sublime Text &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>C# How To Run C# Code Inside Sublime Text</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/07/21/c-how-to-run-c-code-inside-sublime-text/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/07/21/c-how-to-run-c-code-inside-sublime-text/#respond</comments>
+				<pubDate>Thu, 21 Jul 2016 06:19:59 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[Sublime Text]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=402</guid>
+				<description><![CDATA[Hey folks, I want to share a tip. Sublime Text is my favorite for quick scripts, text editing and doing other scripting things or anything which doesn&#8217;t require a whole IDE. I love the speed too much and it is super-fast. In the process, I found that you can run C# scripts too, right from &#8230; <a href="https://iamsunny.github.io/codeflairnet/2016/07/21/c-how-to-run-c-code-inside-sublime-text/" class="more-link">Continue reading<span class="screen-reader-text"> "C# How To Run C# Code Inside Sublime Text"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/07/21/c-how-to-run-c-code-inside-sublime-text/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How to configure Sublime-Text to Open HTML file in Chrome on build</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/24/how-to-configure-sublime-text-to-open-html-file-in-chrome-on-build/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/24/how-to-configure-sublime-text-to-open-html-file-in-chrome-on-build/#respond</comments>
+				<pubDate>Fri, 24 Jan 2014 07:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Sublime Text]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/24/how-to-configure-sublime-text-to-open-html-file-in-chrome-on-build</guid>
+				<description><![CDATA[Many times I use Sublime Text as my GoTo text editing tool for not so serious scripting and want it to html files in Google Chrome on build. Here I&#8217;m sharing the steps how I made it work. You first need to create a &#8220;Build System&#8221; called by Sublime Text in order to achieve this &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/24/how-to-configure-sublime-text-to-open-html-file-in-chrome-on-build/" class="more-link">Continue reading<span class="screen-reader-text"> "How to configure Sublime-Text to Open HTML file in Chrome on build"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/24/how-to-configure-sublime-text-to-open-html-file-in-chrome-on-build/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

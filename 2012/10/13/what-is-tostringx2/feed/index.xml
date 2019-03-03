@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: What is toString(&#8220;X2&#8221;)?	</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/2012/10/13/what-is-tostringx2/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet/2012/10/13/what-is-tostringx2/</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Tue, 13 Feb 2018 13:57:26 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+			<item>
+				<title>
+				By: Anonymous				</title>
+				<link>https://iamsunny.github.io/codeflairnet/2012/10/13/what-is-tostringx2/#comment-18</link>
+		<dc:creator><![CDATA[Anonymous]]></dc:creator>
+		<pubDate>Sat, 24 Nov 2012 10:27:49 +0000</pubDate>
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2012/10/13/what-is-tostringx2#comment-18</guid>
+					<description><![CDATA[I liked this post... thanks]]></description>
+		<content:encoded><![CDATA[<p>I liked this post&#8230; thanks</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

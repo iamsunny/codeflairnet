@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CSS &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/css/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>CSS &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>New Inheritance Features in CSS</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/13/new-inheritance-features-in-css/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/13/new-inheritance-features-in-css/#respond</comments>
+				<pubDate>Mon, 13 Jan 2014 12:08:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[CSS]]></category>
+		<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[HTML5]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/13/new-inheritance-features-in-css</guid>
+				<description><![CDATA[let’s explore the new inheritance features that you may not be aware of and see where these features fit-in well to use and how to use them effectively.Inheritance in CSS is actually very straightforward. Imagine you had to specify the font-size or font-family of every element, instead of simply adding it to the body element? &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/13/new-inheritance-features-in-css/" class="more-link">Continue reading<span class="screen-reader-text"> "New Inheritance Features in CSS"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/13/new-inheritance-features-in-css/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Positioning in CSS</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/04/positioning-in-css/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/04/positioning-in-css/#respond</comments>
+				<pubDate>Sat, 04 Jan 2014 12:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Positioning]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/04/positioning-in-css</guid>
+				<description><![CDATA[If you don&#8217;t specify an element&#8217;s positioning type, it defaults to static. This just means &#8220;where the element would normally go.&#8221; If you don&#8217;t tell an element how to position itself, it just plunks itself down in the document.Absolute positioningThe first type of positioning is absolute positioning. When an element is set to position: absolute, it&#8217;s then positioned in &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/04/positioning-in-css/" class="more-link">Continue reading<span class="screen-reader-text"> "Positioning in CSS"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/04/positioning-in-css/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>&#8220;display&#8221; property in CSS</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/04/display-property-in-css/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/04/display-property-in-css/#respond</comments>
+				<pubDate>Sat, 04 Jan 2014 11:12:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[CSS]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/04/display-property-in-css</guid>
+				<description><![CDATA[In this post we will learn four possible values of &#8220;display&#8221; property in CSS.1. block: This makes the element a block box. It won&#8217;t let anything sit next to it on the page! It takes up the full width.2. inline-block: This makes the element a block box, but will allow other elements to sit next &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/04/display-property-in-css/" class="more-link">Continue reading<span class="screen-reader-text"> "&#8220;display&#8221; property in CSS"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/04/display-property-in-css/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>&#8220;Pixel&#8221; vs &#8220;em&#8221; in CSS</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/03/pixel-vs-em-in-css/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/03/pixel-vs-em-in-css/#respond</comments>
+				<pubDate>Fri, 03 Jan 2014 07:51:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[CSS]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/03/pixel-vs-em-in-css</guid>
+				<description><![CDATA[A pixel is a dot on your computer screen. Specifying font sizes in pixels is great when you want the user to see exactly on their screen what you designed on yours, though it assumes your screens are of similar size. What if the user is using a screen that&#8217;s a very different size from &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/03/pixel-vs-em-in-css/" class="more-link">Continue reading<span class="screen-reader-text"> "&#8220;Pixel&#8221; vs &#8220;em&#8221; in CSS"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/03/pixel-vs-em-in-css/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

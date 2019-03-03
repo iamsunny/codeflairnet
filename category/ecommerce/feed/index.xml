@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>eCommerce &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/ecommerce/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>eCommerce &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What is Affiliate Marketing?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/05/05/what-is-affiliate-marketing/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/05/05/what-is-affiliate-marketing/#respond</comments>
+				<pubDate>Mon, 05 May 2014 10:13:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Affiliate]]></category>
+		<category><![CDATA[eCommerce]]></category>
+		<category><![CDATA[Online Marketing]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/05/05/what-is-affiliate-marketing</guid>
+				<description><![CDATA[Any website or business that provides links or sales to the site actually making the sale through their own marketing efforts is called Affiliate, and, this whole process is called affiliate marketing. Following are one of the top Affiliate Networks who offers Affiliate Programs: LinkShare,  Commission Junction  Amazon  ClickBank  Google ]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/05/05/what-is-affiliate-marketing/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

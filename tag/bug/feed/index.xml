@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Bug &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/tag/bug/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Bug &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Project Migration Error &#8211; StackFlair-master</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/03/29/project-migration-error-stackflair-master/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/03/29/project-migration-error-stackflair-master/#respond</comments>
+				<pubDate>Tue, 29 Mar 2016 16:55:30 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Bugs]]></category>
+		<category><![CDATA[Visual Studio]]></category>
+		<category><![CDATA[Bug]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/?p=344</guid>
+				<description><![CDATA[An hour back I was trying to generate a flair like StackOverflow and after a bit of research I landed up StackFlair Project by Rebecca Chernoff on GitHub. Right now I&#8217;m running Visual Studio 2013 Ultimate on my PC. I tried to start the project and it asked me to migrate. Fair enough. I did. And it didn&#8217;t go well. Threw an &#8230; <a href="https://iamsunny.github.io/codeflairnet/2016/03/29/project-migration-error-stackflair-master/" class="more-link">Continue reading<span class="screen-reader-text"> "Project Migration Error &#8211; StackFlair-master"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/03/29/project-migration-error-stackflair-master/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

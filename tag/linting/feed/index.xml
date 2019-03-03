@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Linting &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/tag/linting/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Linting &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What is Linting?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2015/05/06/what-is-linting/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2015/05/06/what-is-linting/#respond</comments>
+				<pubDate>Tue, 05 May 2015 21:11:32 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+		<category><![CDATA[Linter]]></category>
+		<category><![CDATA[Linting]]></category>
+
+		<guid isPermaLink="false">http://codeflair.net/?p=220</guid>
+				<description><![CDATA[Linting is a process of running a program to analyse your code for potential syntax errors. lint was the name originally given to a particular program that flagged some suspicious and non-portable constructs (likely to be bugs) in C language source code. The term is now applied generically to tools that flag suspicious usage in software written &#8230; <a href="https://iamsunny.github.io/codeflairnet/2015/05/06/what-is-linting/" class="more-link">Continue reading<span class="screen-reader-text"> "What is Linting?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2015/05/06/what-is-linting/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

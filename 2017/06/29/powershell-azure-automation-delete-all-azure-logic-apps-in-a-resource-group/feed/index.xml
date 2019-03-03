@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: [Powershell] Azure Automation &#8211; Delete all Azure Logic Apps in a Resource Group	</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/2017/06/29/powershell-azure-automation-delete-all-azure-logic-apps-in-a-resource-group/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet/2017/06/29/powershell-azure-automation-delete-all-azure-logic-apps-in-a-resource-group/</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Tue, 13 Feb 2018 13:57:26 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+</channel>
+</rss>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="https://iamsunny.github.io/codeflairnet/xmlrpc.php">
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>How to use RailPNRAPI to get PNR Status? &#8211; CodeFlair.Net</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="CodeFlair.Net &raquo; Feed" href="https://iamsunny.github.io/codeflairnet/feed/" />
+<link rel="alternate" type="application/rss+xml" title="CodeFlair.Net &raquo; Comments Feed" href="https://iamsunny.github.io/codeflairnet/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="CodeFlair.Net &raquo; How to use RailPNRAPI to get PNR Status? Comments Feed" href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/iamsunny.github.io\/codeflairnet\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://iamsunny.github.io/codeflairnet/wp-includes/css/dist/block-library/style.min.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://iamsunny.github.io/codeflairnet/wp-includes/css/dist/block-library/theme.min.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/genericons/genericons.css?ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-style-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/style.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-block-style-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/css/blocks.css?ver=20181230' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='twentysixteen-ie-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/css/ie.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentysixteen-ie8-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/css/ie8.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentysixteen-ie7-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/css/ie7.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/js/html5.js?ver=3.7.3'></script>
+<![endif]-->
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://iamsunny.github.io/codeflairnet/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://iamsunny.github.io/codeflairnet/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://iamsunny.github.io/codeflairnet/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='&#8216;bdfb4361-93b5-436d-bed2-2e56f3e60351&#8217; is not a valid 24 digit hex string' href='https://iamsunny.github.io/codeflairnet/2014/05/13/bdfb4361-93b5-436d-bed2-2e56f3e60351-is-not-a-valid-24-digit-hex-string/' />
+<link rel='next' title='How to integrate InkFilePicker library in Web App' href='https://iamsunny.github.io/codeflairnet/2014/06/21/how-to-integrate-inkfilepicker-library-in-web-app/' />
+<meta name="generator" content="WordPress 5.1" />
+<link rel="canonical" href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/" />
+<link rel='shortlink' href='https://iamsunny.github.io/codeflairnet/?p=26' />
+<link rel="alternate" type="application/json+oembed" href="https://iamsunny.github.io/codeflairnet/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fiamsunny.github.io%2Fcodeflairnet%2F2014%2F06%2F02%2Fhow-to-use-railpnrapi-to-get-pnr-status%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://iamsunny.github.io/codeflairnet/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fiamsunny.github.io%2Fcodeflairnet%2F2014%2F06%2F02%2Fhow-to-use-railpnrapi-to-get-pnr-status%2F&#038;format=xml" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<link rel="icon" href="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			.widget .widget-title {	
+	text-transform: none;
+}
+
+.widget {
+		font-size: 13px;
+		font-size: 1.0rem;
+		line-height: 1.8153846154;
+		margin-bottom: 0.5em;
+		padding-top: 0.5em;
+		border-top: none;
+	}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+}
+
+.search-submit{bottom:auto}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.label-normal {
+    font-weight: normal;
+}
+
+.pattern {
+    color: #808080;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.supports-color .color,
+.supports-date .date,
+.supports-time .time,
+.supports-month .mont {
+    display: none;
+}
+
+input,
+select {
+    display: inline-block;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding: 0.25em 0.5em;
+    width: 100%;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    margin-bottom: 0.5em;
+    width: auto;
+}
+
+.button {
+    background-color: #0088cc;
+    border: 1px solid #0088cc;
+    border-radius: 1px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 0.9375em;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-right: 0.3125em;
+    margin-bottom: 0.3125em;
+    padding: 0.5em 0.6875em;
+    width: auto;
+}
+
+.button:active,
+.button:focus,
+.button:hover {
+    background-color: #005580;
+    border-color: #005580;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:active {
+    box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
+}
+
+/**
+ * Errors
+ */
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.success-message {
+  color: green;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.mc-status:focus {
+    outline: none;
+}		</style>
+		</head>
+
+<body class="post-template-default single single-post postid-26 single-format-standard wp-embed-responsive group-blog">
+<div id="page" class="site">
+	<div class="site-inner">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-header-main">
+				<div class="site-branding">
+					
+											<p class="site-title"><a href="https://iamsunny.github.io/codeflairnet/" rel="home">CodeFlair.Net</a></p>
+												<p class="site-description">Sunny Sharma&#039;s Personal Blog!</p>
+									</div><!-- .site-branding -->
+
+									<button id="menu-toggle" class="menu-toggle">Menu</button>
+
+					<div id="site-header-menu" class="site-header-menu">
+													<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+								<div class="menu-menu-1-container"><ul id="menu-menu-1" class="primary-menu"><li id="menu-item-327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-327"><a href="http://codeflair.net/">Home</a></li>
+<li id="menu-item-646" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-646"><a href="https://iamsunny.github.io/codeflairnet/tag/microsoft-azure/">Microsoft Azure</a></li>
+<li id="menu-item-647" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-647"><a href="https://iamsunny.github.io/codeflairnet/tag/speakings/">Speakings</a></li>
+<li id="menu-item-329" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-329"><a href="https://iamsunny.github.io/codeflairnet/category/mongodb/">MongoDB</a></li>
+<li id="menu-item-331" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-331"><a href="https://iamsunny.github.io/codeflairnet/category/asp-net/">ASP.NET</a></li>
+<li id="menu-item-332" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-332"><a href="https://iamsunny.github.io/codeflairnet/category/html5/">HTML5</a></li>
+<li id="menu-item-333" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-333"><a href="https://iamsunny.github.io/codeflairnet/category/c/">C#</a></li>
+</ul></div>							</nav><!-- .main-navigation -->
+						
+											</div><!-- .site-header-menu -->
+							</div><!-- .site-header-main -->
+
+					</header><!-- .site-header -->
+
+		<div id="content" class="site-content">
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		
+<article id="post-26" class="post-26 post type-post status-publish format-standard hentry category-api category-c category-how-to-check-pnr-status category-railpnrapi category-sample-code">
+	<header class="entry-header">
+		<h1 class="entry-title">How to use RailPNRAPI to get PNR Status?</h1>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<div dir="ltr" style="text-align:left;">Here I&#8217;m sharing the sample code on How to consume API provided by railpnrapi.com to query Indian Railway PNR status:</p>
+<p>Register yourself on http://www.railpnrapi.com/ and get/generate API Key &amp; API Secret.</p>
+<p>using Newtonsoft.Json;<br />using System;<br />using System.Collections.Generic;<br />using System.IO;<br />using System.Linq;<br />using System.Net;<br />using System.Security.Cryptography;<br />using System.Text;</p>
+<p>namespace RailPnrAPI_SampleCode<br />{<br />    class Program<br />    {<br />        static void Main(string[] args)<br />        {<br />            //set your credentials<br />            var apiCreds = new Dictionary<br />            {<br />                {&#8220;Key&#8221;, &#8220;&#8221;},<br />                {&#8220;Secret&#8221;, &#8220;&#8221;}<br />            };</p>
+<p>          <br />            var pnr = &#8220;1234567890&#8221;; //test pnr<br />            var requestUrlTemplate = &#8220;http://railpnrapi.com/api/check_pnr/pnr/&#8221;+pnr+&#8221;/format/json/pbapikey/&#8221; +<br />                                   apiCreds[&#8220;Key&#8221;] + &#8220;/pbapisign/{0}&#8221;;</p>
+<p>            //Get All the request parameter<br />            var paramsSet = new Dictionary<br />            {<br />                {&#8220;pnr&#8221;, pnr},<br />                {&#8220;format&#8221;, &#8220;json&#8221;},<br />                {&#8220;pbapikey&#8221;, apiCreds[&#8220;Key&#8221;]}<br />            };</p>
+<p>            //sort the keys and concat their values<br />            var inputString = paramsSet.OrderBy(x =&gt; x.Key).Select(x =&gt; x.Value).Aggregate((a, b) =&gt; a + b).ToLower();<br />          <br />            //var keyBytes = Encoding.ASCII.GetBytes(apiCreds[&#8220;Secret&#8221;]);<br />            var keyBytes = Encoding.ASCII.GetBytes(apiCreds[&#8220;Secret&#8221;]);</p>
+<p>            // compute hash<br />            var signature = ComputeHMACSHA1(inputString, keyBytes);</p>
+<p>            var request = WebRequest.CreateHttp(string.Format(requestUrlTemplate, signature));<br />            var response = request.GetResponse();<br />          <br />            // parse JSON response using Newtonsoft.Json<br />            dynamic json = JsonConvert.DeserializeObject(new StreamReader(response.GetResponseStream()).ReadToEnd());<br />          </p>
+<p>            // process/display response</p>
+<p>            Console.WriteLine(&#8220;Response Code: {0}&#8221;,json.response_code);<br />            Console.WriteLine(&#8220;PNR: {0}&#8221;, json.pnr);<br />            Console.WriteLine(&#8220;Train No.: {0}&#8221;, json.train_num);<br />            Console.WriteLine(&#8220;Train Name: {0}&#8221;, json.train_name);<br />            Console.WriteLine(&#8220;DOJ: {0}&#8221;, json.doj);<br />            Console.WriteLine(&#8220;From Station (Code/Name): {0}/{1}&#8221;, json.from_station.code, json.from_station.name);<br />            Console.WriteLine(&#8220;To Station (Code/Name): {0}/{1}&#8221;, json.to_station.code, json.to_station.name);<br />            Console.WriteLine(&#8220;Reservation Upto (Code/Name): {0}/{1}&#8221;, json.reservation_upto.code, json.reservation_upto.name);<br />            Console.WriteLine(&#8220;Boarding Point (Code/Name): {0}/{1}&#8221;, json.boarding_point.code, json.boarding_point.name);<br />          <br />            Console.WriteLine(&#8220;Class: {0}&#8221;, json.@class);<br />            Console.WriteLine(&#8220;No. of Passengers: {0}&#8221;, json.no_of_passengers);<br />            Console.WriteLine(&#8220;Chart Status: {0}&#8221;, json.chart_prepared);<br />            Console.WriteLine();<br />            Console.WriteLine(&#8220;Passengers: n********************************&#8221;);<br />            foreach (var passenger in json.passengers)<br />            {<br />                Console.WriteLine(&#8220;Passenger #:{0}, Booking Status:{1}, Current Status:{2}&#8221;, passenger.sr, passenger.passengers, passenger.current_status);<br />            }<br />            Console.WriteLine();<br />            Console.WriteLine(&#8220;********************************&#8221;);</p>
+<p>            Console.ReadLine();</p>
+<p>        }</p>
+<p>        private static string ComputeHMACSHA1(string input, byte[] key)<br />        {<br />            var myHmacSha1 = new HMACSHA1(key);<br />            byte[] byteArray = Encoding.ASCII.GetBytes(input);<br />            var stream = new MemoryStream(byteArray);<br />            byte[] hashValue = myHmacSha1.ComputeHash(stream);<br />            return string.Join(&#8220;&#8221;, Array.ConvertAll(hashValue, b =&gt; b.ToString(&#8220;x2&#8221;)));<br />        }<br />    }<br />}</p>
+<div></div>
+<p>     Here&#8217;s the sample console output:</p>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;">
+<tbody>
+<tr>
+<td style="text-align:center;"><a href="https://codeflair.files.wordpress.com/2014/06/1da91-railpnrapi_update_snap.png" style="margin-left:auto;margin-right:auto;"><img border="0" src="https://codeflair.files.wordpress.com/2014/06/1da91-railpnrapi_update_snap.png" height="370" width="640" /></a></td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align:center;">Sample Code Output</td>
+</tr>
+</tbody>
+</table>
+<div class="separator" style="clear:both;text-align:center;"></div>
+<p>Sample Code in VB<br />&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Imports Newtonsoft.Json</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Imports System.Collections.Generic</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Imports System.IO</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Imports System.Linq</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Imports System.Net</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Imports System.Security.Cryptography</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Imports System.Text</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Public Class PnrResponse</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public response_code As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public pnr As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public train_num As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public train_name As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public doj As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public from_station As Station = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public to_station As Station = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public reservation_upto As Station = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public boarding_point As Station = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public [class] As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public no_of_passengers As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public chart_prepared As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public passengers As List(Of Passenger) = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public [error] As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">End Class</span><br /><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Public Class Station</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public code As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public name As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">End Class</span><br /><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Public Class Passenger</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public sr As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public booking_status As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Public current_status As String = Nothing</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">End Class</span><br /><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">Module Module1</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Sub Main(args As String())</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        &#8216;set your credentials</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim apiCreds = New Dictionary(Of String, String)() From {</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">            {&#8220;Key&#8221;, &#8220;&#8221;}, _</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">            {&#8220;Secret&#8221;, &#8220;&#8221;} _</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        }</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim pnr = &#8220;1234567890&#8221;</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        &#8216;test pnr</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim requestUrlTemplate = &#8220;http://railpnrapi.com/api/check_pnr/pnr/&#8221; + pnr + &#8220;/format/json/pbapikey/&#8221; + apiCreds(&#8220;Key&#8221;) + &#8220;/pbapisign/{0}&#8221;</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        &#8216;Get All the request parameter</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim paramsSet = New Dictionary(Of String, String)() From { _</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">            {&#8220;pnr&#8221;, pnr}, _</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">            {&#8220;format&#8221;, &#8220;json&#8221;}, _</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">            {&#8220;pbapikey&#8221;, apiCreds(&#8220;Key&#8221;)} _</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        }</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        &#8216;sort the keys and concat their values</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim inputString = paramsSet.OrderBy(Function(x) x.Key).[Select](Function(x) x.Value).Aggregate(Function(a, b) a + b).ToLower()</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        &#8216;var keyBytes = Encoding.ASCII.GetBytes(apiCreds[&#8220;Secret&#8221;]);</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim keyBytes = Encoding.ASCII.GetBytes(apiCreds(&#8220;Secret&#8221;))</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        &#8216; compute hash</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim signature = ComputeHMACSHA1(inputString, keyBytes)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim request = WebRequest.CreateHttp(String.Format(requestUrlTemplate, signature))</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim response = request.GetResponse()</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        &#8216; parse JSON response using Newtonsoft.Json</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim responseText = New StreamReader(response.GetResponseStream()).ReadToEnd()</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim json As PnrResponse = JsonConvert.DeserializeObject(Of PnrResponse)(responseText)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        &#8216; process/display response</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;Response Code: {0}&#8221;, json.response_code)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;PNR: {0}&#8221;, json.pnr)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;Train No.: {0}&#8221;, json.train_num)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;Train Name: {0}&#8221;, json.train_name)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;DOJ: {0}&#8221;, json.doj)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;From Station (Code/Name): {0}/{1}&#8221;, json.from_station.code, json.from_station.name)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;To Station (Code/Name): {0}/{1}&#8221;, json.to_station.code, json.to_station.name)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;Reservation Upto (Code/Name): {0}/{1}&#8221;, json.reservation_upto.code, json.reservation_upto.name)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;Boarding Point (Code/Name): {0}/{1}&#8221;, json.boarding_point.code, json.boarding_point.name)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;Class: {0}&#8221;, json.[class])</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;No. of Passengers: {0}&#8221;, json.no_of_passengers)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;Chart Status: {0}&#8221;, json.chart_prepared)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine()</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;Passengers: &#8221; &amp; vbLf &amp; &#8220;********************************&#8221;)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        For Each passenger In json.passengers</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">            Console.WriteLine(&#8220;Passenger #:{0}, Booking Status:{1}, Current Status:{2}&#8221;, passenger.sr, passenger.booking_status, passenger.current_status)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Next</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine()</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.WriteLine(&#8220;********************************&#8221;)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Console.ReadLine()</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    End Sub</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    Private Function ComputeHMACSHA1(input As String, key As Byte()) As String</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim myHmacSha1 = New HMACSHA1(key)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim byteArray As Byte() = Encoding.ASCII.GetBytes(input)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim stream = New MemoryStream(byteArray)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Dim hashValue As Byte() = myHmacSha1.ComputeHash(stream)</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">        Return String.Join(&#8220;&#8221;, Array.ConvertAll(hashValue, Function(b) b.ToString(&#8220;x2&#8221;)))</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;">    End Function</span></div>
+<div class="MsoNoSpacing"><span style="font-family:inherit;"><br /></span></div>
+<p><span style="font-family:inherit;">End Module</span><br /><span style="font-family:inherit;"><br /></span><span style="font-family:inherit;">&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</span><br /><span style="font-family:inherit;"><br /></span><br /><span style="font-family:inherit;"><b>Download </b>Sample Code for C# &amp; VB Here: <a href="https://www.dropbox.com/s/zu38ghvrpsngzi5/RailPnrAPI_Sample_Codes_CSharp%26VB.zip" target="_blank"><b>Sample Codes Rail PNR API</b></a></span><br /><span style="font-family:inherit;"><br /></span><span style="font-family:inherit;"><br /></span></div>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/2854b9fd40112d96f928b273d0e81909?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2854b9fd40112d96f928b273d0e81909?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="https://iamsunny.github.io/codeflairnet/author/sunnykumar08/">Sunny Sharma</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/" rel="bookmark"><time class="entry-date published updated" datetime="2014-06-02T12:28:00+00:00">June 2, 2014</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://iamsunny.github.io/codeflairnet/category/api/" rel="category tag">API</a>, <a href="https://iamsunny.github.io/codeflairnet/category/c/" rel="category tag">C#</a>, <a href="https://iamsunny.github.io/codeflairnet/category/how-to-check-pnr-status/" rel="category tag">How to check pnr status</a>, <a href="https://iamsunny.github.io/codeflairnet/category/railpnrapi/" rel="category tag">RailPNRAPI</a>, <a href="https://iamsunny.github.io/codeflairnet/category/sample-code/" rel="category tag">Sample Code</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			9 thoughts on &ldquo;How to use RailPNRAPI to get PNR Status?&rdquo;		</h2>
+
+		
+		<ol class="comment-list">
+					<li id="comment-2" class="comment even thread-even depth-1">
+			<article id="div-comment-2" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/?s=42&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo avatar-default' height='42' width='42' />						<b class="fn"><a href='http://www.blogger.com/profile/02715806716579901198' rel='external nofollow' class='url'>razz</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#comment-2">
+							<time datetime="2014-06-10T15:21:06+00:00">
+								June 10, 2014 at 3:21 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>thanks your code works perfectly .</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/?replytocom=2#respond' data-commentid="2" data-postid="26" data-belowelement="div-comment-2" data-respondelement="respond" aria-label='Reply to razz'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-3" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-3" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/?s=42&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo avatar-default' height='42' width='42' />						<b class="fn"><a href='http://www.blogger.com/profile/10262381034879662676' rel='external nofollow' class='url'>Singh</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#comment-3">
+							<time datetime="2014-06-24T20:45:17+00:00">
+								June 24, 2014 at 8:45 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>i m unable to imolement your code in vb.net after convert it.</p>
+<p>plz send me vb.net code if possible&#8230;.</p>
+<p>thank you.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/?replytocom=3#respond' data-commentid="3" data-postid="26" data-belowelement="div-comment-3" data-respondelement="respond" aria-label='Reply to Singh'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-4" class="comment even thread-even depth-1">
+			<article id="div-comment-4" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/?s=42&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo avatar-default' height='42' width='42' />						<b class="fn"><a href='http://www.blogger.com/profile/14425460020863935372' rel='external nofollow' class='url'>Sunny Kumar</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#comment-4">
+							<time datetime="2014-06-25T05:49:32+00:00">
+								June 25, 2014 at 5:49 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>thanks razz! I&#39;m glad it helped 🙂</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/?replytocom=4#respond' data-commentid="4" data-postid="26" data-belowelement="div-comment-4" data-respondelement="respond" aria-label='Reply to Sunny Kumar'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-5" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-5" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/?s=42&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo avatar-default' height='42' width='42' />						<b class="fn"><a href='http://www.blogger.com/profile/08942775834812476056' rel='external nofollow' class='url'>P.s vinoth</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#comment-5">
+							<time datetime="2014-06-25T06:23:09+00:00">
+								June 25, 2014 at 6:23 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Could you please get me the code in java, as am not aware of vb</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/?replytocom=5#respond' data-commentid="5" data-postid="26" data-belowelement="div-comment-5" data-respondelement="respond" aria-label='Reply to P.s vinoth'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-6" class="comment even thread-even depth-1">
+			<article id="div-comment-6" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/?s=42&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo avatar-default' height='42' width='42' />						<b class="fn"><a href='http://www.blogger.com/profile/14425460020863935372' rel='external nofollow' class='url'>Sunny Kumar</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#comment-6">
+							<time datetime="2014-06-25T07:00:08+00:00">
+								June 25, 2014 at 7:00 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Dear Singh,</p>
+<p>I&#39;ve updated the post with sample code in VB also, please have a look. Thanks!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/?replytocom=6#respond' data-commentid="6" data-postid="26" data-belowelement="div-comment-6" data-respondelement="respond" aria-label='Reply to Sunny Kumar'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-7" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-7" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/?s=42&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo avatar-default' height='42' width='42' />						<b class="fn"><a href='http://www.blogger.com/profile/14425460020863935372' rel='external nofollow' class='url'>Sunny Kumar</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#comment-7">
+							<time datetime="2014-06-25T07:02:16+00:00">
+								June 25, 2014 at 7:02 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thanks for reaching out!<br />Well, I&#39;m not a java guy but will surely try to get you the code soon!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/?replytocom=7#respond' data-commentid="7" data-postid="26" data-belowelement="div-comment-7" data-respondelement="respond" aria-label='Reply to Sunny Kumar'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-8" class="comment even thread-even depth-1">
+			<article id="div-comment-8" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/?s=42&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo avatar-default' height='42' width='42' />						<b class="fn"><a href='http://www.blogger.com/profile/12050000979339181893' rel='external nofollow' class='url'>Bhuwan</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#comment-8">
+							<time datetime="2014-09-22T17:54:55+00:00">
+								September 22, 2014 at 5:54 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>How can I generate the HMAC in Node JS? Please help</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/?replytocom=8#respond' data-commentid="8" data-postid="26" data-belowelement="div-comment-8" data-respondelement="respond" aria-label='Reply to Bhuwan'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-85" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-85" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/d9a686a732a497bfb6ea0323200a3534?s=42&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d9a686a732a497bfb6ea0323200a3534?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' />						<b class="fn"><a href='http://www.pnrs.in//' rel='external nofollow' class='url'>Aishwarya</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#comment-85">
+							<time datetime="2016-05-30T08:41:44+00:00">
+								May 30, 2016 at 8:41 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I’m happy I located this blog thanks for share&#8230;.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/?replytocom=85#respond' data-commentid="85" data-postid="26" data-belowelement="div-comment-85" data-respondelement="respond" aria-label='Reply to Aishwarya'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-702" class="comment even thread-even depth-1">
+			<article id="div-comment-702" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/5f72d1cd58140ad8076611371219b2fe?s=42&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/5f72d1cd58140ad8076611371219b2fe?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' />						<b class="fn">Amit kumar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#comment-702">
+							<time datetime="2017-02-13T04:00:15+00:00">
+								February 13, 2017 at 4:00 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>HELLO Sunny Sir,<br />
+      I want Create Pnr check site , So Please Help How to use Json Api In WordPress Based site. I Am But Api.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/?replytocom=702#respond' data-commentid="702" data-postid="26" data-belowelement="div-comment-702" data-respondelement="respond" aria-label='Reply to Amit kumar'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+		<div id="respond" class="comment-respond">
+		<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#respond" style="display:none;">Cancel reply</a></small></h2>			<form action="https://iamsunny.github.io/codeflairnet/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /><label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='26' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a6a92adb7a" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="35"/></p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- .comments-area -->
+
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://iamsunny.github.io/codeflairnet/2014/05/13/bdfb4361-93b5-436d-bed2-2e56f3e60351-is-not-a-valid-24-digit-hex-string/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">&#8216;bdfb4361-93b5-436d-bed2-2e56f3e60351&#8217; is not a valid 24 digit hex string</span></a></div><div class="nav-next"><a href="https://iamsunny.github.io/codeflairnet/2014/06/21/how-to-integrate-inkfilepicker-library-in-web-app/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">How to integrate InkFilePicker library in Web App</span></a></div></div>
+	</nav>
+	</main><!-- .site-main -->
+
+	
+</div><!-- .content-area -->
+
+
+	<aside id="secondary" class="sidebar widget-area" role="complementary">
+		<section id="media_image-3" class="widget widget_media_image"><a href="https://mvp.microsoft.com/en-us/PublicProfile/5001932?fullName=Sunny%20Kumar%20Sharma"><img width="300" height="121" src="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2017/07/MVP-L-300x121.png" class="image wp-image-616  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" srcset="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2017/07/MVP-L-300x121.png 300w, https://iamsunny.github.io/codeflairnet/wp-content/uploads/2017/07/MVP-L.png 751w" sizes="(max-width: 300px) 85vw, 300px" /></a></section><section id="custom_html-5" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://stackoverflow.com/users/1057667/sunny-sharma">
+<img src="https://stackoverflow.com/users/flair/1057667.png" width="208" height="58" alt="profile for Sunny Sharma at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Sunny Sharma at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a></div></section><section id="search-2" class="widget widget_search">
+<form role="search" method="get" class="search-form" action="https://iamsunny.github.io/codeflairnet/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	</label>
+	<button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+</form>
+</section><section id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><form action="//codeflair.us9.list-manage.com/subscribe/post?u=db3abe485c46adce50454ee41&amp;id=7dd68fee29" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+	<div>
+	<label for="mce-EMAIL">Subscribe for updates</label>
+	<input type="email" name="EMAIL" id="mce-EMAIL" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" placeholder="email address" required>
+	</div>
+	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_db3abe485c46adce50454ee41_7dd68fee29" tabindex="-1" value=""></div>
+	<div class="mc-status"></div>
+	<div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form></div></section><section id="categories-4" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+				<li class="cat-item cat-item-7"><a href="https://iamsunny.github.io/codeflairnet/category/asp-net/" >ASP.NET</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://iamsunny.github.io/codeflairnet/category/asp-net-core/" >ASP.NET Core</a>
+</li>
+	<li class="cat-item cat-item-94"><a href="https://iamsunny.github.io/codeflairnet/category/bugs/" >Bugs</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://iamsunny.github.io/codeflairnet/category/c/" >C#</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="https://iamsunny.github.io/codeflairnet/category/cloud/" >Cloud</a>
+</li>
+	<li class="cat-item cat-item-131"><a href="https://iamsunny.github.io/codeflairnet/category/database/" >Database</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="https://iamsunny.github.io/codeflairnet/category/events/" >Events</a>
+</li>
+	<li class="cat-item cat-item-106"><a href="https://iamsunny.github.io/codeflairnet/category/ignite-ui/" >Ignite UI</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="https://iamsunny.github.io/codeflairnet/category/javascript/" >JavaScript</a>
+</li>
+	<li class="cat-item cat-item-117"><a href="https://iamsunny.github.io/codeflairnet/category/microsoft-azure/" >Microsoft Azure</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="https://iamsunny.github.io/codeflairnet/category/microsoft-office/" >Microsoft Office</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="https://iamsunny.github.io/codeflairnet/category/misc/" >MISC</a>
+</li>
+	<li class="cat-item cat-item-102"><a href="https://iamsunny.github.io/codeflairnet/category/node-js/" >Node.js</a>
+</li>
+	<li class="cat-item cat-item-126"><a href="https://iamsunny.github.io/codeflairnet/category/powershell/" >Powershell</a>
+</li>
+	<li class="cat-item cat-item-58"><a href="https://iamsunny.github.io/codeflairnet/category/presentations/" >Presentations</a>
+</li>
+	<li class="cat-item cat-item-97"><a href="https://iamsunny.github.io/codeflairnet/category/reposted-blogs/" >Repost</a>
+</li>
+	<li class="cat-item cat-item-124"><a href="https://iamsunny.github.io/codeflairnet/category/software-review/" >Software Review</a>
+</li>
+	<li class="cat-item cat-item-101"><a href="https://iamsunny.github.io/codeflairnet/category/speaking/" >Speaking</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="https://iamsunny.github.io/codeflairnet/category/sql-server/" >SQL Server</a>
+</li>
+	<li class="cat-item cat-item-65"><a href="https://iamsunny.github.io/codeflairnet/category/sublime-text/" >Sublime Text</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://iamsunny.github.io/codeflairnet/category/uncategorized/" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="https://iamsunny.github.io/codeflairnet/category/visual-studio/" >Visual Studio</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="https://iamsunny.github.io/codeflairnet/category/visual-studio-code/" >Visual Studio Code</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="https://iamsunny.github.io/codeflairnet/category/web-hosting/" >Web Hosting</a>
+</li>
+		</ul>
+			</section>		<section id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2018/11/29/office-365-export-perfect-tool-to-backup-office-365-mailbox-to-pst/">Office 365 Export | Perfect Tool to Backup Office 365 Mailbox to PST</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2018/03/13/how-to-convert-a-sql-table-to-c-class/">How to Convert a SQL Table to C# Class</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2018/03/13/my-first-post-on-medium/">my first post on Medium</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/07/01/awarded-microsoft-mvp-2nd-time-in-a-row/">Awarded &#8211; Microsoft MVP 2nd time in a row</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/06/29/powershell-azure-automation-delete-all-azure-logic-apps-in-a-resource-group/">[Powershell] Azure Automation &#8211; Delete all Azure Logic Apps in a Resource Group</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/06/14/powershell-export-self-signed-certificate/">[Powershell] Export Self-Signed Certificate</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/05/19/software-review-stellar-phoenix-windows-data-recovery/">[Software Review] &#8211; Stellar Phoenix Windows Data Recovery</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/02/05/how-to-generate-free-ssl-certificate-for-azure-website/">How to: Generate Free SSL Certificate for a domain and upload on Azure  Website?</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/01/28/quick-tip-use-windows-explorer-address-bar-for-commands/">[Quick Tip]: Use Windows Explorer address bar for &#8220;commands&#8221;</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/11/27/typescript-fundamentals-session-recap/">TypeScript Fundamentals &#8211; Session Recap</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/10/12/how-to-manage-iis-server-online/">How to manage IIS Server online</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/07/21/c-how-to-run-c-code-inside-sublime-text/">C# How To Run C# Code Inside Sublime Text</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/07/16/presented-on-javascript-best-practices/">Presented on Javascript Best Practices</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/07/15/realtime-pulse-monitor-using-signalr-and-ignite-ui-igsparkline/">RealTime Pulse Monitor Using SignalR And Ignite UI igSparkline</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/07/04/getting-started-with-ignite-ui-iggrid/">Getting Started with Ignite UI igGrid</a>
+									</li>
+					</ul>
+		</section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+				<li><a href='https://iamsunny.github.io/codeflairnet/2018/11/'>November 2018</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2018/03/'>March 2018</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2017/07/'>July 2017</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2017/06/'>June 2017</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2017/05/'>May 2017</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2017/02/'>February 2017</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2017/01/'>January 2017</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/11/'>November 2016</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/10/'>October 2016</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/07/'>July 2016</a>&nbsp;(4)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/06/'>June 2016</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/04/'>April 2016</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/03/'>March 2016</a>&nbsp;(6)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2015/08/'>August 2015</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2015/05/'>May 2015</a>&nbsp;(5)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2015/04/'>April 2015</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/09/'>September 2014</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/07/'>July 2014</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/06/'>June 2014</a>&nbsp;(5)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/05/'>May 2014</a>&nbsp;(3)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/04/'>April 2014</a>&nbsp;(6)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/02/'>February 2014</a>&nbsp;(3)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/01/'>January 2014</a>&nbsp;(16)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/12/'>December 2013</a>&nbsp;(5)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/09/'>September 2013</a>&nbsp;(6)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/07/'>July 2013</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/06/'>June 2013</a>&nbsp;(5)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/05/'>May 2013</a>&nbsp;(5)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/01/'>January 2013</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2012/10/'>October 2012</a>&nbsp;(2)</li>
+		</ul>
+			</section>	</aside><!-- .sidebar .widget-area -->
+
+		</div><!-- .site-content -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+							<nav class="main-navigation" role="navigation" aria-label="Footer Primary Menu">
+					<div class="menu-menu-1-container"><ul id="menu-menu-2" class="primary-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-327"><a href="http://codeflair.net/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-646"><a href="https://iamsunny.github.io/codeflairnet/tag/microsoft-azure/">Microsoft Azure</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-647"><a href="https://iamsunny.github.io/codeflairnet/tag/speakings/">Speakings</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-329"><a href="https://iamsunny.github.io/codeflairnet/category/mongodb/">MongoDB</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-331"><a href="https://iamsunny.github.io/codeflairnet/category/asp-net/">ASP.NET</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-332"><a href="https://iamsunny.github.io/codeflairnet/category/html5/">HTML5</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-333"><a href="https://iamsunny.github.io/codeflairnet/category/c/">C#</a></li>
+</ul></div>				</nav><!-- .main-navigation -->
+			
+			
+			<div class="site-info">
+								<span class="site-title"><a href="https://iamsunny.github.io/codeflairnet/" rel="home">CodeFlair.Net</a></span>
+								<a href="https://wordpress.org/" class="imprint">
+					Proudly powered by WordPress				</a>
+			</div><!-- .site-info -->
+		</footer><!-- .site-footer -->
+	</div><!-- .site-inner -->
+</div><!-- .site -->
+
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js?ver=20160816'></script>
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-includes/js/comment-reply.min.js?ver=5.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/js/functions.js?ver=20181230'></script>
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-includes/js/wp-embed.min.js?ver=5.1'></script>
+<script async="async" type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-content/plugins/akismet/_inc/form.js?ver=4.1.1'></script>
+</body>
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>MongoDB Basic Operations &#8211; CodeFlair.Net</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="CodeFlair.Net &raquo; Feed" href="https://iamsunny.github.io/codeflairnet/feed/" />
+<link rel="alternate" type="application/rss+xml" title="CodeFlair.Net &raquo; Comments Feed" href="https://iamsunny.github.io/codeflairnet/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="CodeFlair.Net &raquo; MongoDB Basic Operations Category Feed" href="https://iamsunny.github.io/codeflairnet/category/mongodb-basic-operations/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/iamsunny.github.io\/codeflairnet\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://iamsunny.github.io/codeflairnet/wp-includes/css/dist/block-library/style.min.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://iamsunny.github.io/codeflairnet/wp-includes/css/dist/block-library/theme.min.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/genericons/genericons.css?ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-style-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/style.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-block-style-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/css/blocks.css?ver=20181230' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='twentysixteen-ie-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/css/ie.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentysixteen-ie8-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/css/ie8.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentysixteen-ie7-css'  href='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/css/ie7.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/js/html5.js?ver=3.7.3'></script>
+<![endif]-->
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://iamsunny.github.io/codeflairnet/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://iamsunny.github.io/codeflairnet/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://iamsunny.github.io/codeflairnet/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<link rel="icon" href="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			.widget .widget-title {	
+	text-transform: none;
+}
+
+.widget {
+		font-size: 13px;
+		font-size: 1.0rem;
+		line-height: 1.8153846154;
+		margin-bottom: 0.5em;
+		padding-top: 0.5em;
+		border-top: none;
+	}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+}
+
+.search-submit{bottom:auto}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.label-normal {
+    font-weight: normal;
+}
+
+.pattern {
+    color: #808080;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.supports-color .color,
+.supports-date .date,
+.supports-time .time,
+.supports-month .mont {
+    display: none;
+}
+
+input,
+select {
+    display: inline-block;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding: 0.25em 0.5em;
+    width: 100%;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    margin-bottom: 0.5em;
+    width: auto;
+}
+
+.button {
+    background-color: #0088cc;
+    border: 1px solid #0088cc;
+    border-radius: 1px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 0.9375em;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-right: 0.3125em;
+    margin-bottom: 0.3125em;
+    padding: 0.5em 0.6875em;
+    width: auto;
+}
+
+.button:active,
+.button:focus,
+.button:hover {
+    background-color: #005580;
+    border-color: #005580;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:active {
+    box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
+}
+
+/**
+ * Errors
+ */
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.success-message {
+  color: green;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.mc-status:focus {
+    outline: none;
+}		</style>
+		</head>
+
+<body class="archive category category-mongodb-basic-operations category-50 wp-embed-responsive group-blog hfeed">
+<div id="page" class="site">
+	<div class="site-inner">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-header-main">
+				<div class="site-branding">
+					
+											<p class="site-title"><a href="https://iamsunny.github.io/codeflairnet/" rel="home">CodeFlair.Net</a></p>
+												<p class="site-description">Sunny Sharma&#039;s Personal Blog!</p>
+									</div><!-- .site-branding -->
+
+									<button id="menu-toggle" class="menu-toggle">Menu</button>
+
+					<div id="site-header-menu" class="site-header-menu">
+													<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+								<div class="menu-menu-1-container"><ul id="menu-menu-1" class="primary-menu"><li id="menu-item-327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-327"><a href="http://codeflair.net/">Home</a></li>
+<li id="menu-item-646" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-646"><a href="https://iamsunny.github.io/codeflairnet/tag/microsoft-azure/">Microsoft Azure</a></li>
+<li id="menu-item-647" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-647"><a href="https://iamsunny.github.io/codeflairnet/tag/speakings/">Speakings</a></li>
+<li id="menu-item-329" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-329"><a href="https://iamsunny.github.io/codeflairnet/category/mongodb/">MongoDB</a></li>
+<li id="menu-item-331" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-331"><a href="https://iamsunny.github.io/codeflairnet/category/asp-net/">ASP.NET</a></li>
+<li id="menu-item-332" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-332"><a href="https://iamsunny.github.io/codeflairnet/category/html5/">HTML5</a></li>
+<li id="menu-item-333" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-333"><a href="https://iamsunny.github.io/codeflairnet/category/c/">C#</a></li>
+</ul></div>							</nav><!-- .main-navigation -->
+						
+											</div><!-- .site-header-menu -->
+							</div><!-- .site-header-main -->
+
+					</header><!-- .site-header -->
+
+		<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			<header class="page-header">
+				<h1 class="page-title">Category: MongoDB Basic Operations</h1>			</header><!-- .page-header -->
+
+			
+<article id="post-41" class="post-41 post type-post status-publish format-standard hentry category-asp-net-mvc4 category-mongo-shell category-mongodb category-mongodb-admininstrative-operations category-mongodb-basic-operations">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="https://iamsunny.github.io/codeflairnet/2014/04/23/getting-started-with-mongodb-and-asp-net-mvc4-day-2/" rel="bookmark">Getting Started With MongoDB and ASP.Net MVC4: Day 2</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<div dir="ltr" style="text-align:left;font-size:15px;">
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">This article takes you a step further in getting started with MongoDB and ASP.NET series. Today, we will learn how to perform basic CRUD operations in MongoDB using Mongo Shell and a little about MongoDB C# Driver organization. The first two articles in this series are basically focused on MongoDB installation and how to use Mongo Shell to administer Mongo Server. In case you may want to read the Day 1 article, please refer to this link:</span></div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="background-color:white;color:#0066cc;cursor:pointer;font-family:Trebuchet MS, sans-serif;font-size:13px;outline:none 0;text-decoration:none;"><a href="http://www.codeflair.net/2014/04/getting-started-with-mongodb-and-aspnet.html" style="background-color:white;color:#0066cc;cursor:pointer;font-size:13px;outline:none 0;text-decoration:none;" target="_blank">Getting Started With MongoDB and ASP.Net MVC4: Day 1</a></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;">Let&#8217;s Start</span></b></div>
+</div>
+<div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">So far you already know how to install and start Mongo Server (if you don&#8217;t then please follow the link above). Let&#8217;s start using Mongo Shell now and learn how to perform basic DB operations.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">Okay, here I&#8217;ve a Mongo Server running in my local system on port 27017 and 28017 (the are default ports) as in the following:</span></div>
+</div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div class="separator" style="clear:both;text-align:justify;"><a href="https://codeflair.files.wordpress.com/2014/04/a3067-localsystemport.jpg" style="margin-left:1em;margin-right:1em;"><span style="font-family:Trebuchet MS, sans-serif;"><img border="0" src="https://codeflair.files.wordpress.com/2014/04/a3067-localsystemport.jpg" height="262" width="640" /></span></a></div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">And here&#8217;s the Mongo Shell:</span></div>
+</div>
+<div class="separator" style="clear:both;text-align:justify;"><a href="https://codeflair.files.wordpress.com/2014/04/c8ac5-mongoshell.jpg" style="margin-left:1em;margin-right:1em;"><span style="font-family:Trebuchet MS, sans-serif;"><img border="0" src="https://codeflair.files.wordpress.com/2014/04/c8ac5-mongoshell.jpg" height="316" width="640" /></span></a></div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div></p>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">You can see by looking at this figure that I&#8217;ve two collections (tables) in my MongoDB.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">Before beginning with the Mongo Shell: there are many administrative and other commands available from the shell. If you want to check out what&#8217;s available then just type help and you can get specific help and more specific operations.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;">Creating Database in MongoDB using Mongo Shell</span></b></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">You already know from the previous article that the default database is “test” in MongoDB. If you want to create another db then just switch the db as you do in SQL Server using “use ” command syntax. It is the same in MongoDB also:</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">Command: <b>&#8220;</b>Use <b>myApp&#8221;</b> or any name you like, it will switch or create a database if one doesn&#8217;t exist already.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">Issue the &#8220;<b>show dbs</b>&#8221; command to see what databases are in there like I can see in the figure above.</span></div>
+</div>
+</div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;">Saving (Inserting) documents in MongoDB</span></b></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></b></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">As you know, MongoDB is schema-less and you don&#8217;t need to worry about creating tables (here we call them Collections), just insert the data into any collection. It will create the collection also if it doesn&#8217;t exist; very easy, isn&#8217;t it?</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;">
+<tbody>
+<tr>
+<td style="text-align:center;"><a href="https://codeflair.files.wordpress.com/2014/04/2cc30-amongodbdocument.jpg" style="margin-left:auto;margin-right:auto;"><span style="font-family:Trebuchet MS, sans-serif;"><img border="0" src="https://codeflair.files.wordpress.com/2014/04/2cc30-amongodbdocument.jpg" height="204" width="640" /></span></a></td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align:center;"><span style="background-color:white;text-align:start;"><span style="color:blue;font-family:Trebuchet MS, sans-serif;">A MongoDB Document: Image courtesy (MongoDB Documentation)</span></span></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;">
+<tbody>
+<tr>
+<td style="text-align:center;"><a href="https://codeflair.files.wordpress.com/2014/04/e3da5-mongodbcollection.jpg" style="margin-left:auto;margin-right:auto;"><span style="font-family:Trebuchet MS, sans-serif;"><img border="0" src="https://codeflair.files.wordpress.com/2014/04/e3da5-mongodbcollection.jpg" height="330" width="640" /></span></a></td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align:center;"><span style="background-color:white;text-align:start;"><span style="color:blue;font-family:Trebuchet MS, sans-serif;">MongoDB Collection: Image courtesy (MongoDB Documentation)</span></span></td>
+</tr>
+</tbody>
+</table>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div></p>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">You use db..insert() for inserting data/documents into a MongoDB. “db” refers to the active database, so db.collection1 will refer to the current or active database that is myApp in our case. For example:</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">db.users.insert({username:”sunny”,password:”test”}) //if insert is successful it returns nothing.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">The Command above will first create the collection “users” since our database “myApp” is empty and we don&#8217;t have any collection in there, and then it will insert the document. Later you can see the data inside a collection using the <b>find() command</b> on a collection.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div class="separator" style="clear:both;text-align:justify;"><a href="https://codeflair.files.wordpress.com/2014/04/56cd9-insertthedocument.jpg" style="margin-left:1em;margin-right:1em;"><span style="font-family:Trebuchet MS, sans-serif;"><img border="0" src="https://codeflair.files.wordpress.com/2014/04/56cd9-insertthedocument.jpg" height="204" width="640" /></span></a></div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;">Select documents from MongoDB</span></b></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></b></div>
+</div>
+<div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><b>Syntax:</b> db..find() // if you don&#8217;t specify any document to filter then it returns all the data.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><b>E.g:</b> db.users.find(); // this will select all documents from the collection.</span></div>
+</div>
+</div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div class="separator" style="clear:both;text-align:justify;"><a href="https://codeflair.files.wordpress.com/2014/04/5af60-selectdocumentsfrommongodb.jpg" style="margin-left:1em;margin-right:1em;"><span style="font-family:Trebuchet MS, sans-serif;"><img border="0" src="https://codeflair.files.wordpress.com/2014/04/5af60-selectdocumentsfrommongodb.jpg" height="166" width="640" /></span></a></div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">Did you notice it automatically assigns an id to the document? Yes, it automatically creates a field “_id” with a GUID as a value for your document if it doesn&#8217;t contain one. If you&#8217;ve a field “_id” specified in your document, it&#8217;s pretty good then. You can see in the picture below that if I specify a field “_id” in my document, it doesn&#8217;t add it by itself:</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div class="separator" style="clear:both;text-align:justify;"><a href="https://codeflair.files.wordpress.com/2014/04/0f60c-idtothedocument.jpg" style="margin-left:1em;margin-right:1em;"><span style="font-family:Trebuchet MS, sans-serif;"><img border="0" src="https://codeflair.files.wordpress.com/2014/04/0f60c-idtothedocument.jpg" height="212" width="640" /></span></a></div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div></p>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">It has another add-on function that shows the output of .find() in a formatted JSON format:</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">Add <b>.pretty() after .find()</b> and it will do the magic:</span></div>
+</div>
+</div>
+<div class="separator" style="clear:both;text-align:justify;"><a href="https://codeflair.files.wordpress.com/2014/04/1bbd3-prettyafterfind.jpg" style="margin-left:1em;margin-right:1em;"><span style="font-family:Trebuchet MS, sans-serif;"><img border="0" src="https://codeflair.files.wordpress.com/2014/04/1bbd3-prettyafterfind.jpg" height="395" width="400" /></span></a></div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;">Deleting document from MongoDB</span></b></div>
+</div>
+<div></p>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">Syntax: <b>db..remove()</b> // here document contains field(s) that works as filter.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">For example: <b>db.users.remove({username:”manish”}) </b>// and you see it&#8217;s gone.</span></div>
+</div>
+</div>
+<div class="separator" style="clear:both;text-align:justify;"><a href="https://codeflair.files.wordpress.com/2014/04/fe4f5-deletingdocumentfrommongodb.jpg" style="margin-left:1em;margin-right:1em;"><span style="font-family:Trebuchet MS, sans-serif;"><img border="0" src="https://codeflair.files.wordpress.com/2014/04/fe4f5-deletingdocumentfrommongodb.jpg" height="336" width="400" /></span></a></div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></b></div>
+</div>
+<div></p>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">So, this was all about giving you a basic idea of how the Mongo Shell works and how to perform administrative tasks using the shell. There&#8217;s <a href="http://docs.mongodb.org/manual/reference/method/" target="_blank">brilliant documentation available on all the available commands</a> with a <a href="http://docs.mongodb.org/manual/core/crud-introduction/" target="_blank">nice tutorial on CRUD operations</a>.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">I suggest you refer to them if you want to master them.</span></div>
+</div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></b></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></b></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;">The official MongoDB Driver for C#</span></b></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><u>Brief History</u>: </span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><a href="https://github.com/atheken/NoRM" target="_blank">NoRM</a> was popular for a while but now it&#8217;s no longer maintained hence not being used in new applications. There are also mongodb-csharp and simple-mongodb but they&#8217;ve both been inactive for several years. <a href="https://github.com/craiggwilson/fluent-mongo" target="_blank">FluentMongo</a> is the first library to provide LINQ support. Now that the LINQ support is built into the official driver, most of the apps have migrated to the official driver completely.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><span style="font-family:Trebuchet MS, sans-serif;">Ways to get/install the official MongoDB driver for C#</span></b></div>
+</div>
+<div>
+<ol style="text-align:left;">
+<li>
+<div style="text-align:justify;"><span style="font-family:'Trebuchet MS', sans-serif;">The easiest and most popular is through Nuget. If you&#8217;re using Visual Studio, then right-click on your project in Solution Explorer and click “Manage Nuget Packages…” then search for “mongo” under the online tab and you&#8217;ll see “Official mongoDB C# Driver” listed on top. Click “Install” and wait for the installation to finish.</span></div>
+<p><span style="font-family:Trebuchet MS, sans-serif;"></p>
+<div style="text-align:justify;"></div>
+<div style="margin-left:1em;margin-right:1em;text-align:justify;"><a href="https://codeflair.files.wordpress.com/2014/04/1afab-officialmongodbcsharpdriver.jpg" style="margin-left:1em;margin-right:1em;"><img border="0" src="https://codeflair.files.wordpress.com/2014/04/1afab-officialmongodbcsharpdriver.jpg" height="432" width="640" /></a></div>
+<div style="text-align:justify;"></div>
+<div style="text-align:justify;">If you use the Package Manager Console then you may want to install it using this command:</div>
+<p><b></p>
+<div style="text-align:justify;"><b>Install-Package mongocsharpdriver</b></div>
+<p></b></span></li>
+<li style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">There&#8217;s also a Zip archive with every release if you want to download them.</span></li>
+<li style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">Also there&#8217;s an MSI installer in case you want to do a Windows style installation from a setup file.</span></li>
+</ol>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">Here you can find the Zip archive and the MSI files:<span style="font-size:large;"> </span><a href="https://github.com/mongodb/mongo-csharp-driver/releases" rel="nofollow" style="background-color:white;color:#0066cc;cursor:pointer;outline:none 0;text-decoration:none;">C#/.NET Driver Version 1.9.0 Release Notes</a></span></div>
+</div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><b><u><span style="font-family:Trebuchet MS, sans-serif;">Summary</span></u></b></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">The purpose of this article was to teach MongoDB basic administrative operations using Mongo Shell and how to download/install the MongoDB C# official Driver. Since we&#8217;re going to learn how to use MongoDB in ASP.NET MVC, we will be using the MongoDB C# Official Driver instead of the Mongo Shell. On the next day, we will learn about the official MongoDB C# Driver&#8217;s organization and how it connects to a Mongo Server.</span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;"><br /></span></div>
+</div>
+<div>
+<div style="text-align:justify;"><span style="font-family:Trebuchet MS, sans-serif;">I hope you enjoyed this post&#8230; thanks for reading!!</span></div>
+</div>
+</div>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/2854b9fd40112d96f928b273d0e81909?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2854b9fd40112d96f928b273d0e81909?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="https://iamsunny.github.io/codeflairnet/author/sunnykumar08/">Sunny Sharma</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="https://iamsunny.github.io/codeflairnet/2014/04/23/getting-started-with-mongodb-and-asp-net-mvc4-day-2/" rel="bookmark"><time class="entry-date published updated" datetime="2014-04-23T05:44:00+00:00">April 23, 2014</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://iamsunny.github.io/codeflairnet/category/asp-net-mvc4/" rel="category tag">ASP.NET MVC4</a>, <a href="https://iamsunny.github.io/codeflairnet/category/mongo-shell/" rel="category tag">Mongo Shell</a>, <a href="https://iamsunny.github.io/codeflairnet/category/mongodb/" rel="category tag">MongoDB</a>, <a href="https://iamsunny.github.io/codeflairnet/category/mongodb-admininstrative-operations/" rel="category tag">MongoDB Admininstrative Operations</a>, <a href="https://iamsunny.github.io/codeflairnet/category/mongodb-basic-operations/" rel="category tag">MongoDB Basic Operations</a></span><span class="comments-link"><a href="https://iamsunny.github.io/codeflairnet/2014/04/23/getting-started-with-mongodb-and-asp-net-mvc4-day-2/#respond">Leave a comment<span class="screen-reader-text"> on Getting Started With MongoDB and ASP.Net MVC4: Day 2</span></a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	<aside id="secondary" class="sidebar widget-area" role="complementary">
+		<section id="media_image-3" class="widget widget_media_image"><a href="https://mvp.microsoft.com/en-us/PublicProfile/5001932?fullName=Sunny%20Kumar%20Sharma"><img width="300" height="121" src="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2017/07/MVP-L-300x121.png" class="image wp-image-616  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" srcset="https://iamsunny.github.io/codeflairnet/wp-content/uploads/2017/07/MVP-L-300x121.png 300w, https://iamsunny.github.io/codeflairnet/wp-content/uploads/2017/07/MVP-L.png 751w" sizes="(max-width: 300px) 85vw, 300px" /></a></section><section id="custom_html-5" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://stackoverflow.com/users/1057667/sunny-sharma">
+<img src="https://stackoverflow.com/users/flair/1057667.png" width="208" height="58" alt="profile for Sunny Sharma at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Sunny Sharma at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a></div></section><section id="search-2" class="widget widget_search">
+<form role="search" method="get" class="search-form" action="https://iamsunny.github.io/codeflairnet/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	</label>
+	<button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+</form>
+</section><section id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><form action="//codeflair.us9.list-manage.com/subscribe/post?u=db3abe485c46adce50454ee41&amp;id=7dd68fee29" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+	<div>
+	<label for="mce-EMAIL">Subscribe for updates</label>
+	<input type="email" name="EMAIL" id="mce-EMAIL" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" placeholder="email address" required>
+	</div>
+	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_db3abe485c46adce50454ee41_7dd68fee29" tabindex="-1" value=""></div>
+	<div class="mc-status"></div>
+	<div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form></div></section><section id="categories-4" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+				<li class="cat-item cat-item-7"><a href="https://iamsunny.github.io/codeflairnet/category/asp-net/" >ASP.NET</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://iamsunny.github.io/codeflairnet/category/asp-net-core/" >ASP.NET Core</a>
+</li>
+	<li class="cat-item cat-item-94"><a href="https://iamsunny.github.io/codeflairnet/category/bugs/" >Bugs</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://iamsunny.github.io/codeflairnet/category/c/" >C#</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="https://iamsunny.github.io/codeflairnet/category/cloud/" >Cloud</a>
+</li>
+	<li class="cat-item cat-item-131"><a href="https://iamsunny.github.io/codeflairnet/category/database/" >Database</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="https://iamsunny.github.io/codeflairnet/category/events/" >Events</a>
+</li>
+	<li class="cat-item cat-item-106"><a href="https://iamsunny.github.io/codeflairnet/category/ignite-ui/" >Ignite UI</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="https://iamsunny.github.io/codeflairnet/category/javascript/" >JavaScript</a>
+</li>
+	<li class="cat-item cat-item-117"><a href="https://iamsunny.github.io/codeflairnet/category/microsoft-azure/" >Microsoft Azure</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="https://iamsunny.github.io/codeflairnet/category/microsoft-office/" >Microsoft Office</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="https://iamsunny.github.io/codeflairnet/category/misc/" >MISC</a>
+</li>
+	<li class="cat-item cat-item-102"><a href="https://iamsunny.github.io/codeflairnet/category/node-js/" >Node.js</a>
+</li>
+	<li class="cat-item cat-item-126"><a href="https://iamsunny.github.io/codeflairnet/category/powershell/" >Powershell</a>
+</li>
+	<li class="cat-item cat-item-58"><a href="https://iamsunny.github.io/codeflairnet/category/presentations/" >Presentations</a>
+</li>
+	<li class="cat-item cat-item-97"><a href="https://iamsunny.github.io/codeflairnet/category/reposted-blogs/" >Repost</a>
+</li>
+	<li class="cat-item cat-item-124"><a href="https://iamsunny.github.io/codeflairnet/category/software-review/" >Software Review</a>
+</li>
+	<li class="cat-item cat-item-101"><a href="https://iamsunny.github.io/codeflairnet/category/speaking/" >Speaking</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="https://iamsunny.github.io/codeflairnet/category/sql-server/" >SQL Server</a>
+</li>
+	<li class="cat-item cat-item-65"><a href="https://iamsunny.github.io/codeflairnet/category/sublime-text/" >Sublime Text</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://iamsunny.github.io/codeflairnet/category/uncategorized/" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="https://iamsunny.github.io/codeflairnet/category/visual-studio/" >Visual Studio</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="https://iamsunny.github.io/codeflairnet/category/visual-studio-code/" >Visual Studio Code</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="https://iamsunny.github.io/codeflairnet/category/web-hosting/" >Web Hosting</a>
+</li>
+		</ul>
+			</section>		<section id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2018/11/29/office-365-export-perfect-tool-to-backup-office-365-mailbox-to-pst/">Office 365 Export | Perfect Tool to Backup Office 365 Mailbox to PST</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2018/03/13/how-to-convert-a-sql-table-to-c-class/">How to Convert a SQL Table to C# Class</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2018/03/13/my-first-post-on-medium/">my first post on Medium</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/07/01/awarded-microsoft-mvp-2nd-time-in-a-row/">Awarded &#8211; Microsoft MVP 2nd time in a row</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/06/29/powershell-azure-automation-delete-all-azure-logic-apps-in-a-resource-group/">[Powershell] Azure Automation &#8211; Delete all Azure Logic Apps in a Resource Group</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/06/14/powershell-export-self-signed-certificate/">[Powershell] Export Self-Signed Certificate</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/05/19/software-review-stellar-phoenix-windows-data-recovery/">[Software Review] &#8211; Stellar Phoenix Windows Data Recovery</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/02/05/how-to-generate-free-ssl-certificate-for-azure-website/">How to: Generate Free SSL Certificate for a domain and upload on Azure  Website?</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2017/01/28/quick-tip-use-windows-explorer-address-bar-for-commands/">[Quick Tip]: Use Windows Explorer address bar for &#8220;commands&#8221;</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/11/27/typescript-fundamentals-session-recap/">TypeScript Fundamentals &#8211; Session Recap</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/10/12/how-to-manage-iis-server-online/">How to manage IIS Server online</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/07/21/c-how-to-run-c-code-inside-sublime-text/">C# How To Run C# Code Inside Sublime Text</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/07/16/presented-on-javascript-best-practices/">Presented on Javascript Best Practices</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/07/15/realtime-pulse-monitor-using-signalr-and-ignite-ui-igsparkline/">RealTime Pulse Monitor Using SignalR And Ignite UI igSparkline</a>
+									</li>
+											<li>
+					<a href="https://iamsunny.github.io/codeflairnet/2016/07/04/getting-started-with-ignite-ui-iggrid/">Getting Started with Ignite UI igGrid</a>
+									</li>
+					</ul>
+		</section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+				<li><a href='https://iamsunny.github.io/codeflairnet/2018/11/'>November 2018</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2018/03/'>March 2018</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2017/07/'>July 2017</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2017/06/'>June 2017</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2017/05/'>May 2017</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2017/02/'>February 2017</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2017/01/'>January 2017</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/11/'>November 2016</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/10/'>October 2016</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/07/'>July 2016</a>&nbsp;(4)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/06/'>June 2016</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/04/'>April 2016</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2016/03/'>March 2016</a>&nbsp;(6)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2015/08/'>August 2015</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2015/05/'>May 2015</a>&nbsp;(5)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2015/04/'>April 2015</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/09/'>September 2014</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/07/'>July 2014</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/06/'>June 2014</a>&nbsp;(5)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/05/'>May 2014</a>&nbsp;(3)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/04/'>April 2014</a>&nbsp;(6)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/02/'>February 2014</a>&nbsp;(3)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2014/01/'>January 2014</a>&nbsp;(16)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/12/'>December 2013</a>&nbsp;(5)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/09/'>September 2013</a>&nbsp;(6)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/07/'>July 2013</a>&nbsp;(1)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/06/'>June 2013</a>&nbsp;(5)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/05/'>May 2013</a>&nbsp;(5)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2013/01/'>January 2013</a>&nbsp;(2)</li>
+	<li><a href='https://iamsunny.github.io/codeflairnet/2012/10/'>October 2012</a>&nbsp;(2)</li>
+		</ul>
+			</section>	</aside><!-- .sidebar .widget-area -->
+
+		</div><!-- .site-content -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+							<nav class="main-navigation" role="navigation" aria-label="Footer Primary Menu">
+					<div class="menu-menu-1-container"><ul id="menu-menu-2" class="primary-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-327"><a href="http://codeflair.net/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-646"><a href="https://iamsunny.github.io/codeflairnet/tag/microsoft-azure/">Microsoft Azure</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-647"><a href="https://iamsunny.github.io/codeflairnet/tag/speakings/">Speakings</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-329"><a href="https://iamsunny.github.io/codeflairnet/category/mongodb/">MongoDB</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-331"><a href="https://iamsunny.github.io/codeflairnet/category/asp-net/">ASP.NET</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-332"><a href="https://iamsunny.github.io/codeflairnet/category/html5/">HTML5</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-333"><a href="https://iamsunny.github.io/codeflairnet/category/c/">C#</a></li>
+</ul></div>				</nav><!-- .main-navigation -->
+			
+			
+			<div class="site-info">
+								<span class="site-title"><a href="https://iamsunny.github.io/codeflairnet/" rel="home">CodeFlair.Net</a></span>
+								<a href="https://wordpress.org/" class="imprint">
+					Proudly powered by WordPress				</a>
+			</div><!-- .site-info -->
+		</footer><!-- .site-footer -->
+	</div><!-- .site-inner -->
+</div><!-- .site -->
+
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js?ver=20160816'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-content/themes/twentysixteen/js/functions.js?ver=20181230'></script>
+<script type='text/javascript' src='https://iamsunny.github.io/codeflairnet/wp-includes/js/wp-embed.min.js?ver=5.1'></script>
+</body>
+</html>

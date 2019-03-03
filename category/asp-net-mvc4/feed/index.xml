@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ASP.NET MVC4 &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/asp-net-mvc4/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>ASP.NET MVC4 &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>&#8216;bdfb4361-93b5-436d-bed2-2e56f3e60351&#8217; is not a valid 24 digit hex string</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/05/13/bdfb4361-93b5-436d-bed2-2e56f3e60351-is-not-a-valid-24-digit-hex-string/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/05/13/bdfb4361-93b5-436d-bed2-2e56f3e60351-is-not-a-valid-24-digit-hex-string/#respond</comments>
+				<pubDate>Tue, 13 May 2014 12:15:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[ASP.NET]]></category>
+		<category><![CDATA[ASP.NET MVC4]]></category>
+		<category><![CDATA[MongoDB]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/05/13/bdfb4361-93b5-436d-bed2-2e56f3e60351-is-not-a-valid-24-digit-hex-string</guid>
+				<description><![CDATA[I encountered this error while working with MongoDB Official C# Driver. This error occured when I was trying you insert some test data into a collection. Here&#8217;s the snap of error it shown Later in the course I figured out i was using BsonReprentation Attribute to decorate the Bson data type as objectId. When I &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/05/13/bdfb4361-93b5-436d-bed2-2e56f3e60351-is-not-a-valid-24-digit-hex-string/" class="more-link">Continue reading<span class="screen-reader-text"> "&#8216;bdfb4361-93b5-436d-bed2-2e56f3e60351&#8217; is not a valid 24 digit hex string"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/05/13/bdfb4361-93b5-436d-bed2-2e56f3e60351-is-not-a-valid-24-digit-hex-string/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Getting Started With MongoDB and ASP.Net MVC4: Day 2</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/04/23/getting-started-with-mongodb-and-asp-net-mvc4-day-2/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/04/23/getting-started-with-mongodb-and-asp-net-mvc4-day-2/#respond</comments>
+				<pubDate>Wed, 23 Apr 2014 05:44:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[ASP.NET MVC4]]></category>
+		<category><![CDATA[Mongo Shell]]></category>
+		<category><![CDATA[MongoDB]]></category>
+		<category><![CDATA[MongoDB Admininstrative Operations]]></category>
+		<category><![CDATA[MongoDB Basic Operations]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/04/23/getting-started-with-mongodb-and-asp-net-mvc4-day-2</guid>
+				<description><![CDATA[This article takes you a step further in getting started with MongoDB and ASP.NET series. Today, we will learn how to perform basic CRUD operations in MongoDB using Mongo Shell and a little about MongoDB C# Driver organization. The first two articles in this series are basically focused on MongoDB installation and how to use &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/04/23/getting-started-with-mongodb-and-asp-net-mvc4-day-2/" class="more-link">Continue reading<span class="screen-reader-text"> "Getting Started With MongoDB and ASP.Net MVC4: Day 2"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/04/23/getting-started-with-mongodb-and-asp-net-mvc4-day-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Getting Started With MongoDB and ASP.Net MVC4: Day 1</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/04/22/getting-started-with-mongodb-and-asp-net-mvc4-day-1/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/04/22/getting-started-with-mongodb-and-asp-net-mvc4-day-1/#respond</comments>
+				<pubDate>Tue, 22 Apr 2014 11:13:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[ASP.NET MVC4]]></category>
+		<category><![CDATA[MongoDB]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/04/22/getting-started-with-mongodb-and-asp-net-mvc4-day-1</guid>
+				<description><![CDATA[Introduction and GoalWith this article I&#8217;m starting a step-by-step series on how to use MongoDB with ASP.NET MVC. In the course we will go from the basic to the advanced operations of MongoDB and gradually how to use it with ASP.NET MVC.  What you will learn You will learn the basics of MongoDB administration. You&#8217;ll &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/04/22/getting-started-with-mongodb-and-asp-net-mvc4-day-1/" class="more-link">Continue reading<span class="screen-reader-text"> "Getting Started With MongoDB and ASP.Net MVC4: Day 1"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/04/22/getting-started-with-mongodb-and-asp-net-mvc4-day-1/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>A new guard page for stack cannot be created- ASP.NET MVC4 Error</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/#respond</comments>
+				<pubDate>Fri, 07 Feb 2014 13:08:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[ASP.NET]]></category>
+		<category><![CDATA[ASP.NET MVC4]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Tips n Tricks]]></category>
+		<category><![CDATA[Troubleshooting]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error</guid>
+				<description><![CDATA[An hour back I was working with ASP.NET and encountered with this pretty error. I kept wandering for about ten minutes what really has happened. My iisexpress.exe was automatically shut down and it didn&#8217;t work when I kept hitting CTRL+F5. How I solved it:Later i the process I came to know that I had the &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/" class="more-link">Continue reading<span class="screen-reader-text"> "A new guard page for stack cannot be created- ASP.NET MVC4 Error"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How to use Server.MapPath in ASP.NET MVC 4?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4/#comments</comments>
+				<pubDate>Tue, 21 Jan 2014 05:50:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[ASP.NET MVC4]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4</guid>
+				<description><![CDATA[You can use Server.MapPath in ASP.NET MVC 4 like this:String path = HttpContext.Current.Server.MapPath(&#8220;~/myFolder/myFile.txt&#8221;);You can use the way mentioned above but ASP.NET MVC 4 has another way to map files on server  and that is using HostingEnvironment class. Actually Server.MapPath() also internally calls HostingEnvironment.MapPath() to map the file paths on server. It belongs to the  System.Web.Hosting &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4/" class="more-link">Continue reading<span class="screen-reader-text"> "How to use Server.MapPath in ASP.NET MVC 4?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+		<item>
+		<title>Cannot create/shadow copy &#8216;DotNetOpenAuth.OAuth&#8217; when that file already exists. &#8211; ASP.NET MVC4</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/16/cannot-createshadow-copy-dotnetopenauth-oauth-when-that-file-already-exists-asp-net-mvc4/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/16/cannot-createshadow-copy-dotnetopenauth-oauth-when-that-file-already-exists-asp-net-mvc4/#respond</comments>
+				<pubDate>Thu, 16 Jan 2014 07:40:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[ASP.NET]]></category>
+		<category><![CDATA[ASP.NET MVC4]]></category>
+		<category><![CDATA[Troubleshooting]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/16/cannot-createshadow-copy-dotnetopenauth-oauth-when-that-file-already-exists-asp-net-mvc4</guid>
+				<description><![CDATA[Error: Cannot create/shadow copy &#8216;DotNetOpenAuth.OAuth&#8217; when that file already exists. How I solved it: Try to re-build the solution and it should work. It worked in my case, I&#8217;m not kidding !]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/16/cannot-createshadow-copy-dotnetopenauth-oauth-when-that-file-already-exists-asp-net-mvc4/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

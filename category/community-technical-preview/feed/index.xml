@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Community Technical Preview &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/community-technical-preview/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Community Technical Preview &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What is a CTP version of a product?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/04/04/what-is-a-ctp-version-of-a-product/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/04/04/what-is-a-ctp-version-of-a-product/#respond</comments>
+				<pubDate>Fri, 04 Apr 2014 11:57:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Community Technical Preview]]></category>
+		<category><![CDATA[CTP]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/04/04/what-is-a-ctp-version-of-a-product</guid>
+				<description><![CDATA[I&#8217;ve been through many articles and news alerts from all around the web saying CTP version of this product is out. Initially I really wasn&#8217;t that much interested in this kind of news neither I was on the level of expertise that I can talk on these terms. As the time passed and I grew &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/04/04/what-is-a-ctp-version-of-a-product/" class="more-link">Continue reading<span class="screen-reader-text"> "What is a CTP version of a product?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/04/04/what-is-a-ctp-version-of-a-product/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

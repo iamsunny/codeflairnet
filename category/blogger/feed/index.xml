@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Blogger &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/blogger/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Blogger &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>[Solved] I cannot see the comments on my blogger posts!</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/06/25/solved-i-cannot-see-the-comments-on-my-blogger-posts/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/06/25/solved-i-cannot-see-the-comments-on-my-blogger-posts/#respond</comments>
+				<pubDate>Wed, 25 Jun 2014 07:31:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Blogger]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/06/25/solved-i-cannot-see-the-comments-on-my-blogger-posts</guid>
+				<description><![CDATA[I recently came to know that I&#8217;m receiving the email when somebody posts a comment on my blog but I actually cannot see the comment when I visit the page. Also, it&#8217;s not in moderation so all the comments are supposed to show up. After digging for around a hour with the actual problem I &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/06/25/solved-i-cannot-see-the-comments-on-my-blogger-posts/" class="more-link">Continue reading<span class="screen-reader-text"> "[Solved] I cannot see the comments on my blogger posts!"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/06/25/solved-i-cannot-see-the-comments-on-my-blogger-posts/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

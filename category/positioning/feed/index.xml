@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Positioning &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/positioning/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Positioning &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Positioning in CSS</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/04/positioning-in-css/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/04/positioning-in-css/#respond</comments>
+				<pubDate>Sat, 04 Jan 2014 12:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Positioning]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/04/positioning-in-css</guid>
+				<description><![CDATA[If you don&#8217;t specify an element&#8217;s positioning type, it defaults to static. This just means &#8220;where the element would normally go.&#8221; If you don&#8217;t tell an element how to position itself, it just plunks itself down in the document.Absolute positioningThe first type of positioning is absolute positioning. When an element is set to position: absolute, it&#8217;s then positioned in &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/04/positioning-in-css/" class="more-link">Continue reading<span class="screen-reader-text"> "Positioning in CSS"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/04/positioning-in-css/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

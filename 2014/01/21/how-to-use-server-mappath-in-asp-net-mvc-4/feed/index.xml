@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: How to use Server.MapPath in ASP.NET MVC 4?	</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4/</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Tue, 13 Feb 2018 13:57:26 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+			<item>
+				<title>
+				By: Sunny Sharma				</title>
+				<link>https://iamsunny.github.io/codeflairnet/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4/#comment-2058</link>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+		<pubDate>Tue, 13 Feb 2018 13:57:26 +0000</pubDate>
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4#comment-2058</guid>
+					<description><![CDATA[are you having any trouble?]]></description>
+		<content:encoded><![CDATA[<p>are you having any trouble?</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				By: Azeem				</title>
+				<link>https://iamsunny.github.io/codeflairnet/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4/#comment-2056</link>
+		<dc:creator><![CDATA[Azeem]]></dc:creator>
+		<pubDate>Sun, 11 Feb 2018 05:46:12 +0000</pubDate>
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/21/how-to-use-server-mappath-in-asp-net-mvc-4#comment-2056</guid>
+					<description><![CDATA[What about MVC 6.0]]></description>
+		<content:encoded><![CDATA[<p>What about MVC 6.0</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

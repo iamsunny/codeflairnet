@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>C# &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/c/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>C# &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>C# How To Run C# Code Inside Sublime Text</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/07/21/c-how-to-run-c-code-inside-sublime-text/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/07/21/c-how-to-run-c-code-inside-sublime-text/#respond</comments>
+				<pubDate>Thu, 21 Jul 2016 06:19:59 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[Sublime Text]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=402</guid>
+				<description><![CDATA[Hey folks, I want to share a tip. Sublime Text is my favorite for quick scripts, text editing and doing other scripting things or anything which doesn&#8217;t require a whole IDE. I love the speed too much and it is super-fast. In the process, I found that you can run C# scripts too, right from &#8230; <a href="https://iamsunny.github.io/codeflairnet/2016/07/21/c-how-to-run-c-code-inside-sublime-text/" class="more-link">Continue reading<span class="screen-reader-text"> "C# How To Run C# Code Inside Sublime Text"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/07/21/c-how-to-run-c-code-inside-sublime-text/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How to use RailPNRAPI to get PNR Status?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/#comments</comments>
+				<pubDate>Mon, 02 Jun 2014 12:28:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[API]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[How to check pnr status]]></category>
+		<category><![CDATA[RailPNRAPI]]></category>
+		<category><![CDATA[Sample Code]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status</guid>
+				<description><![CDATA[Here I&#8217;m sharing the sample code on How to consume API provided by railpnrapi.com to query Indian Railway PNR status: Register yourself on http://www.railpnrapi.com/ and get/generate API Key &#38; API Secret. using Newtonsoft.Json;using System;using System.Collections.Generic;using System.IO;using System.Linq;using System.Net;using System.Security.Cryptography;using System.Text; namespace RailPnrAPI_SampleCode{    class Program    {        static void Main(string[] args)    &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/" class="more-link">Continue reading<span class="screen-reader-text"> "How to use RailPNRAPI to get PNR Status?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/06/02/how-to-use-railpnrapi-to-get-pnr-status/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+							</item>
+		<item>
+		<title>Use of Coding Standards in Programming</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/04/05/use-of-coding-standards-in-programming/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/04/05/use-of-coding-standards-in-programming/#respond</comments>
+				<pubDate>Sat, 05 Apr 2014 10:33:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[Use of Coding Standards in programming]]></category>
+		<category><![CDATA[VB]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/04/05/use-of-coding-standards-in-programming</guid>
+				<description><![CDATA[If you&#8217;re working in a team and use Visual Studio for development then here are few guideline tips on how you could improve the pace and maintain the uniformity among all your team champs. Even if you&#8217;re working alone, it will help you to stay on a track rather moving on different track as you go further hence allow you to &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/04/05/use-of-coding-standards-in-programming/" class="more-link">Continue reading<span class="screen-reader-text"> "Use of Coding Standards in Programming"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/04/05/use-of-coding-standards-in-programming/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>A new guard page for stack cannot be created- ASP.NET MVC4 Error</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/#respond</comments>
+				<pubDate>Fri, 07 Feb 2014 13:08:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[ASP.NET]]></category>
+		<category><![CDATA[ASP.NET MVC4]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Tips n Tricks]]></category>
+		<category><![CDATA[Troubleshooting]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error</guid>
+				<description><![CDATA[An hour back I was working with ASP.NET and encountered with this pretty error. I kept wandering for about ten minutes what really has happened. My iisexpress.exe was automatically shut down and it didn&#8217;t work when I kept hitting CTRL+F5. How I solved it:Later i the process I came to know that I had the &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/" class="more-link">Continue reading<span class="screen-reader-text"> "A new guard page for stack cannot be created- ASP.NET MVC4 Error"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/02/07/a-new-guard-page-for-stack-cannot-be-created-asp-net-mvc4-error/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>&#8220;object does not contain a definition for get_Range&#8221; in Excel C#</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/11/object-does-not-contain-a-definition-for-get_range-in-excel-c/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/11/object-does-not-contain-a-definition-for-get_range-in-excel-c/#comments</comments>
+				<pubDate>Sat, 11 Jan 2014 09:35:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[Excel]]></category>
+		<category><![CDATA[Troubleshooting]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/11/object-does-not-contain-a-definition-for-get_range-in-excel-c</guid>
+				<description><![CDATA[Error: &#8216;object&#8217; does not contain a definition for &#8216;get_Range&#8217; Line of Code: Excel.Range header = wks.get_Range(wks.Cells[1, 1], wks.Cells[1, 10]); Solution: Cast the cells as "object" in get_Range() Excel.Range header = wks.get_Range((object)wks.Cells[1, 1],(object) wks.Cells[1, 10]); Thanks!]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/11/object-does-not-contain-a-definition-for-get_range-in-excel-c/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+							</item>
+		<item>
+		<title>How to convert Visual FoxPro DBF file to Excel in C#</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/11/how-to-convert-visual-foxpro-dbf-file-to-excel-in-c/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/11/how-to-convert-visual-foxpro-dbf-file-to-excel-in-c/#respond</comments>
+				<pubDate>Sat, 11 Jan 2014 08:33:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[Visual FoxPro]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/11/how-to-convert-visual-foxpro-dbf-file-to-excel-in-c</guid>
+				<description><![CDATA[The very first thing as you go start doing this stuff, make sure you&#8217;ve downloaded and installed Visual FoxPro Driver on your host machine. Here the link for download: http://www.microsoft.com/en-us/download/confirmation.aspx?id=14839 Use OleDbConnection to get the records into DataTable and later export/write the DataTable to Excel. Here are the complete codes: using System; using System.Data; using System.Data.OleDb; using System.IO; using Excel = Microsoft.Office.Interop.Excel; &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/11/how-to-convert-visual-foxpro-dbf-file-to-excel-in-c/" class="more-link">Continue reading<span class="screen-reader-text"> "How to convert Visual FoxPro DBF file to Excel in C#"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/11/how-to-convert-visual-foxpro-dbf-file-to-excel-in-c/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How to handle negative TimeSpan value in C#?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/12/30/how-to-handle-negative-timespan-value-in-c/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/12/30/how-to-handle-negative-timespan-value-in-c/#respond</comments>
+				<pubDate>Mon, 30 Dec 2013 07:31:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/12/30/how-to-handle-negative-timespan-value-in-c</guid>
+				<description><![CDATA[I had problems with casting TimeSpan object to DateTime. Error occured: FormatException (&#8220;the input string was not in proper format&#8221;).Code I tried:DateTime.Parse(record.Field(&#8220;Hours&#8221;)); // raised errorHere record is a DataRow object and I&#8217;m using Linq to Objects to parse the Date.//Field actual value :&#8221;{-06:25:00}&#8221;How did I overcome?I used .Duration() method of TimeSpan object.DateTime.Parse(record.Field(&#8220;Hours&#8221;).Duration()); HTH 🙂]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/12/30/how-to-handle-negative-timespan-value-in-c/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>What is CLR (Common Language Runtime)?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-clr-common-language-runtime/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-clr-common-language-runtime/#respond</comments>
+				<pubDate>Thu, 12 Sep 2013 20:55:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[.NET Interview Questions]]></category>
+		<category><![CDATA[C#]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/09/12/what-is-clr-common-language-runtime</guid>
+				<description><![CDATA[CLR is a part of .NET Framework which manages the execution of several supported .NET languages, allowing them to share Common Object-Oriented Classes. CLR is somewhat comparable to Java Virtual Machine. Microsoft refers to its Common Language Runtime as &#8220;Managed Execution Environment&#8220;. CLR held responsible for these important activities: Garbage Collection: CLR automatically manages memory, thus eliminating &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-clr-common-language-runtime/" class="more-link">Continue reading<span class="screen-reader-text"> "What is CLR (Common Language Runtime)?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/09/12/what-is-clr-common-language-runtime/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>What is Native Image Generator (Ngen.exe) and how does it work?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/09/11/what-is-native-image-generator-ngen-exe-and-how-does-it-work/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/09/11/what-is-native-image-generator-ngen-exe-and-how-does-it-work/#respond</comments>
+				<pubDate>Wed, 11 Sep 2013 18:44:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[.NET Interview Questions]]></category>
+		<category><![CDATA[C#]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/09/11/what-is-native-image-generator-ngen-exe-and-how-does-it-work</guid>
+				<description><![CDATA[Ngen.exe (Native Image Generator) is a tool that creates native images, which are files containing compiled Processor-Specific machine code, and installs them into the native image cache on the local computer. It&#8217;s a tool that improves the performance of managed applications. In other words, rather than compiling the code dynamically using JIT on runtime, a &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/09/11/what-is-native-image-generator-ngen-exe-and-how-does-it-work/" class="more-link">Continue reading<span class="screen-reader-text"> "What is Native Image Generator (Ngen.exe) and how does it work?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/09/11/what-is-native-image-generator-ngen-exe-and-how-does-it-work/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>What is API and How to use it?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/06/19/what-is-api-and-how-to-use-it/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/06/19/what-is-api-and-how-to-use-it/#respond</comments>
+				<pubDate>Wed, 19 Jun 2013 15:32:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[API]]></category>
+		<category><![CDATA[C#]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/06/19/what-is-api-and-how-to-use-it</guid>
+				<description><![CDATA[Have you ever used a library in C#? Yes, that&#8217;s an API. An API (Application Programming Interface is something that let&#8217;s you interact with something or with an interface. They are just a set of functions you can call. They have their documentation on what they do, how they behave, what input(s) they need to perform as &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/06/19/what-is-api-and-how-to-use-it/" class="more-link">Continue reading<span class="screen-reader-text"> "What is API and How to use it?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/06/19/what-is-api-and-how-to-use-it/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

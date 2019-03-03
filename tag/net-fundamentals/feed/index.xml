@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>.Net Fundamentals &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/tag/net-fundamentals/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>.Net Fundamentals &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Presented on .Net Fundamentals at Microsoft(CONNECT); event</title>
+		<link>https://iamsunny.github.io/codeflairnet/2015/05/02/presented-on-net-fundamentals-at-microsoftconnect-event/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2015/05/02/presented-on-net-fundamentals-at-microsoftconnect-event/#respond</comments>
+				<pubDate>Sat, 02 May 2015 12:24:19 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Events]]></category>
+		<category><![CDATA[.Net Fundamentals]]></category>
+
+		<guid isPermaLink="false">http://codeflair.net/?p=202</guid>
+				<description><![CDATA[Microsoft User Group Delhi organized a fabulous full day event on 25th April 2015. It was held at Bharati Vidyapeeth College of Engineering, Paschim Vihar, New Delhi. The event on focused on CS students and they learnt a lot about .Net, PowerShell and SharePoint. I presented on .Net Fundamentals. Here&#8217;s few awesome click work by them &#8230; <a href="https://iamsunny.github.io/codeflairnet/2015/05/02/presented-on-net-fundamentals-at-microsoftconnect-event/" class="more-link">Continue reading<span class="screen-reader-text"> "Presented on .Net Fundamentals at Microsoft(CONNECT); event"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2015/05/02/presented-on-net-fundamentals-at-microsoftconnect-event/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

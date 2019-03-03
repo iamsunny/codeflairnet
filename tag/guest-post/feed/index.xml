@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Guest Post &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/tag/guest-post/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Guest Post &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Office 365 Export &#124; Perfect Tool to Backup Office 365 Mailbox to PST</title>
+		<link>https://iamsunny.github.io/codeflairnet/2018/11/29/office-365-export-perfect-tool-to-backup-office-365-mailbox-to-pst/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2018/11/29/office-365-export-perfect-tool-to-backup-office-365-mailbox-to-pst/#respond</comments>
+				<pubDate>Thu, 29 Nov 2018 12:58:10 +0000</pubDate>
+		<dc:creator><![CDATA[Ashish Singh]]></dc:creator>
+				<category><![CDATA[Cloud]]></category>
+		<category><![CDATA[Software Review]]></category>
+		<category><![CDATA[Guest Post]]></category>
+
+		<guid isPermaLink="false">https://iamsunny.github.io/codeflairnet/?p=721</guid>
+				<description><![CDATA[[Guest Post] Many times, admin as well as individuals wants to save their crucial data from cloud to a local system. Well, there are several reasons due to which users want to switch to the desktop email application. Thus, Outlook is one of the most commonly used email programs with a great number of benefits. &#8230; <a href="https://iamsunny.github.io/codeflairnet/2018/11/29/office-365-export-perfect-tool-to-backup-office-365-mailbox-to-pst/" class="more-link">Continue reading<span class="screen-reader-text"> "Office 365 Export &#124; Perfect Tool to Backup Office 365 Mailbox to PST"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2018/11/29/office-365-export-perfect-tool-to-backup-office-365-mailbox-to-pst/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

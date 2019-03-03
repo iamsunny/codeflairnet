@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Android &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/android/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Android &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How I enabled &#8220;Developer Options&#8221; in SONY EXPERIA C ?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/04/26/how-i-enabled-developer-options-in-sony-experia-c/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/04/26/how-i-enabled-developer-options-in-sony-experia-c/#respond</comments>
+				<pubDate>Sat, 26 Apr 2014 10:39:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/04/26/how-i-enabled-developer-options-in-sony-experia-c</guid>
+				<description><![CDATA[It was simple but to archive this and share as well I&#8217;m throwing it here: Goto &#8220;Settings&#8221; Tap &#8220;About phone&#8221; Tap &#8220;Build Number&#8221; four times and the screen will tell you to press few more times to become a &#8220;developer&#8221;. Do that and finally it will say-&#8221; you&#8217;re a developer now!&#8221; &#8230;kind of that! Press &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/04/26/how-i-enabled-developer-options-in-sony-experia-c/" class="more-link">Continue reading<span class="screen-reader-text"> "How I enabled &#8220;Developer Options&#8221; in SONY EXPERIA C ?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/04/26/how-i-enabled-developer-options-in-sony-experia-c/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How to enable Developer Options in Android 4.2</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/05/how-to-enable-developer-options-in-android-4-2/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/05/how-to-enable-developer-options-in-android-4-2/#respond</comments>
+				<pubDate>Sun, 05 Jan 2014 11:17:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[MISC]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/05/how-to-enable-developer-options-in-android-4-2</guid>
+				<description><![CDATA[Developer Options in Android 4.2 (Jelly Bean) is hidden by default so you won&#8217;t be able to see this setting in &#8220;Settings &#62; More &#62; &#8230;&#8221; or anywhere in mobile settings. To enable it, you need to go to &#8220;Settings &#62; About Device&#8221; and Tap 7 times on &#8220;Build number&#8221; and that&#8217;s all. Your Developer option is &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/05/how-to-enable-developer-options-in-android-4-2/" class="more-link">Continue reading<span class="screen-reader-text"> "How to enable Developer Options in Android 4.2"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/05/how-to-enable-developer-options-in-android-4-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

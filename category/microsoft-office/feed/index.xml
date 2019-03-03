@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Microsoft Office &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/microsoft-office/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Microsoft Office &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to prevent users from accessing Visual Basic Editor (VBE) for Microsoft Office applications?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/07/03/how-to-prevent-users-from-accessing-visual-basic-editor-vbe-for-microsoft-office-applications/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/07/03/how-to-prevent-users-from-accessing-visual-basic-editor-vbe-for-microsoft-office-applications/#respond</comments>
+				<pubDate>Thu, 03 Jul 2014 09:38:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Excel]]></category>
+		<category><![CDATA[Microsoft Office]]></category>
+		<category><![CDATA[VBA]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/07/03/how-to-prevent-users-from-accessing-visual-basic-editor-vbe-for-microsoft-office-applications</guid>
+				<description><![CDATA[If you want to prevent users from accessing Visual Basic Editor (VBE) on any PC / Workstation after you&#8217;ve installed Microsoft Office package (as there are certainly other ways to do it while installation), here&#8217;s the easiest way of doing this: It is already mentioned over the link I shared above and I&#8217;m sharing it &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/07/03/how-to-prevent-users-from-accessing-visual-basic-editor-vbe-for-microsoft-office-applications/" class="more-link">Continue reading<span class="screen-reader-text"> "How to prevent users from accessing Visual Basic Editor (VBE) for Microsoft Office applications?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/07/03/how-to-prevent-users-from-accessing-visual-basic-editor-vbe-for-microsoft-office-applications/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

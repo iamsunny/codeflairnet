@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Web 2.0 &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/web-2-0/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Web 2.0 &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What is Web 2.0?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/02/03/what-is-web-2-0/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/02/03/what-is-web-2-0/#respond</comments>
+				<pubDate>Mon, 03 Feb 2014 06:13:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Internet]]></category>
+		<category><![CDATA[Web 2.0]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/02/03/what-is-web-2-0</guid>
+				<description><![CDATA[Image Courtesy: wikipedia.org The term “Web 2.0” defines a set of principles and practices for web applications, which, when followed, entitle a web application to wear the Web 2.0 crown. A web site can claim to be a Web 2.0 site if it: Allows users to control data presented on the web site Presents a &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/02/03/what-is-web-2-0/" class="more-link">Continue reading<span class="screen-reader-text"> "What is Web 2.0?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/02/03/what-is-web-2-0/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

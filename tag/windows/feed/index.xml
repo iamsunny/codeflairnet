@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Windows &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/tag/windows/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Windows &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to manage IIS Server online</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/10/12/how-to-manage-iis-server-online/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/10/12/how-to-manage-iis-server-online/#respond</comments>
+				<pubDate>Wed, 12 Oct 2016 17:48:41 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Web Hosting]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[IIS Online]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Windows]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=430</guid>
+				<description><![CDATA[Hey folks, now it&#8217;s possible to manage your IIS (Internet Information Services) Server right from the browser. I&#8217;m here going to share the steps I was required to perform before it started running. It was simple though. Right now the service is in &#8220;Preview&#8221; mode, hope to see this launched very soon! &#8220;To start, head &#8230; <a href="https://iamsunny.github.io/codeflairnet/2016/10/12/how-to-manage-iis-server-online/" class="more-link">Continue reading<span class="screen-reader-text"> "How to manage IIS Server online"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/10/12/how-to-manage-iis-server-online/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

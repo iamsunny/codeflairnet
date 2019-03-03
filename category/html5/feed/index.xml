@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>HTML5 &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/html5/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>HTML5 &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Basics of creating Parallax Effect using HTML CSS and JavaScript</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/31/basics-of-creating-parallax-effect-using-html-css-and-javascript/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/31/basics-of-creating-parallax-effect-using-html-css-and-javascript/#comments</comments>
+				<pubDate>Fri, 31 Jan 2014 06:38:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Basics of Parallax]]></category>
+		<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[jQuery]]></category>
+		<category><![CDATA[Parallax]]></category>
+		<category><![CDATA[parallax]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/31/basics-of-creating-parallax-effect-using-html-css-and-javascript</guid>
+				<description><![CDATA[In this article I'll explain what a Parallax is? What does it mean? How to create one from scratch? There're so many JS libraries out there that I used to the effect in action but I never thought of getting into the basics of its What &#38; How. Trust me, it's that simple. Let's move &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/31/basics-of-creating-parallax-effect-using-html-css-and-javascript/" class="more-link">Continue reading<span class="screen-reader-text"> "Basics of creating Parallax Effect using HTML CSS and JavaScript"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/31/basics-of-creating-parallax-effect-using-html-css-and-javascript/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>New Inheritance Features in CSS</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/01/13/new-inheritance-features-in-css/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/01/13/new-inheritance-features-in-css/#respond</comments>
+				<pubDate>Mon, 13 Jan 2014 12:08:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[CSS]]></category>
+		<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[HTML5]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/01/13/new-inheritance-features-in-css</guid>
+				<description><![CDATA[let’s explore the new inheritance features that you may not be aware of and see where these features fit-in well to use and how to use them effectively.Inheritance in CSS is actually very straightforward. Imagine you had to specify the font-size or font-family of every element, instead of simply adding it to the body element? &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/01/13/new-inheritance-features-in-css/" class="more-link">Continue reading<span class="screen-reader-text"> "New Inheritance Features in CSS"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/01/13/new-inheritance-features-in-css/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Creating Reusable and Scalable Calendar Icon in HTML5 and CSS3</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/12/23/creating-reusable-and-scalable-calendar-icon-in-html5-and-css3/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/12/23/creating-reusable-and-scalable-calendar-icon-in-html5-and-css3/#respond</comments>
+				<pubDate>Mon, 23 Dec 2013 05:46:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[Tips n Tricks]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/12/23/creating-reusable-and-scalable-calendar-icon-in-html5-and-css3</guid>
+				<description><![CDATA[This article explains how tro create a calendar icon for your blog or website, and yes, it is scalable, so you can resize it to any ratio and it will not be blurred just by changing a font-size.  You’re free to change the color/size of the text or an icon or anything as you prefer. &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/12/23/creating-reusable-and-scalable-calendar-icon-in-html5-and-css3/" class="more-link">Continue reading<span class="screen-reader-text"> "Creating Reusable and Scalable Calendar Icon in HTML5 and CSS3"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/12/23/creating-reusable-and-scalable-calendar-icon-in-html5-and-css3/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Template Tag in HTML5</title>
+		<link>https://iamsunny.github.io/codeflairnet/2013/12/23/template-tag-in-html5/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2013/12/23/template-tag-in-html5/#respond</comments>
+				<pubDate>Mon, 23 Dec 2013 05:33:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[HTML5]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2013/12/23/template-tag-in-html5</guid>
+				<description><![CDATA[W3C has introduced a new &#8220;template&#8221; tag that provides a mechanism to define HTML markup fragments as prototypes. In practice, a template can be used to insert fragments of HTML code into your page, for example: &#60;template id=&#8221;rowTemplate&#8221;&#62; &#60;tr&#62; &#60;td class=&#8221;record&#8221;&#62;&#60;/td&#62; &#60;td&#62;&#60;/td&#62; &#60;td&#62;&#60;/td&#62; &#60;/tr&#62; &#60;/template&#62; FeaturesThe following are the features of the template tag: The template code can &#8230; <a href="https://iamsunny.github.io/codeflairnet/2013/12/23/template-tag-in-html5/" class="more-link">Continue reading<span class="screen-reader-text"> "Template Tag in HTML5"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2013/12/23/template-tag-in-html5/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

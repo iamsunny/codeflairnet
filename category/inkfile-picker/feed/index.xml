@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>InkFile Picker &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/inkfile-picker/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>InkFile Picker &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to integrate InkFilePicker library in Web App</title>
+		<link>https://iamsunny.github.io/codeflairnet/2014/06/21/how-to-integrate-inkfilepicker-library-in-web-app/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2014/06/21/how-to-integrate-inkfilepicker-library-in-web-app/#respond</comments>
+				<pubDate>Sat, 21 Jun 2014 05:48:00 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Filepicker]]></category>
+		<category><![CDATA[InkFile]]></category>
+		<category><![CDATA[InkFile Picker]]></category>
+		<category><![CDATA[Picker]]></category>
+
+		<guid isPermaLink="false">https://codeflair.wordpress.com/2014/06/21/how-to-integrate-inkfilepicker-library-in-web-app</guid>
+				<description><![CDATA[I heard many developers across the forum asking about how to integrate InkFilePicker library into their application and hence thought to give it a try. I’m sharing here the steps to get started with the library. Formerly known as FilePicker.io, InkFilePicker is a library that allows user to connect to popular Cloud Services like Dropbox, &#8230; <a href="https://iamsunny.github.io/codeflairnet/2014/06/21/how-to-integrate-inkfilepicker-library-in-web-app/" class="more-link">Continue reading<span class="screen-reader-text"> "How to integrate InkFilePicker library in Web App"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2014/06/21/how-to-integrate-inkfilepicker-library-in-web-app/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

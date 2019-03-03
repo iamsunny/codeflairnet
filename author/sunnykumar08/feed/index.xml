@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Sunny Sharma &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/author/sunnykumar08/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Sunny Sharma &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to Convert a SQL Table to C# Class</title>
+		<link>https://iamsunny.github.io/codeflairnet/2018/03/13/how-to-convert-a-sql-table-to-c-class/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2018/03/13/how-to-convert-a-sql-table-to-c-class/#respond</comments>
+				<pubDate>Tue, 13 Mar 2018 17:13:34 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Database]]></category>
+		<category><![CDATA[SQL]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=686</guid>
+				<description><![CDATA[Run the following SQL query and it will print the SQL table in a formatted C# Class: &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211; DECLARE @tbl sysname = &#8216;doc360_User_Role&#8217; DECLARE @ClassStr varchar(MAX) = &#8216;public class &#8216; + @tbl + &#8216; {&#8216; SELECT @ClassStr = @ClassStr + &#8216; public &#8216; + ColumnType + NullableSign + &#8216; &#8216; + ColumnName + &#8216; { &#8230; <a href="https://iamsunny.github.io/codeflairnet/2018/03/13/how-to-convert-a-sql-table-to-c-class/" class="more-link">Continue reading<span class="screen-reader-text"> "How to Convert a SQL Table to C# Class"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2018/03/13/how-to-convert-a-sql-table-to-c-class/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>my first post on Medium</title>
+		<link>https://iamsunny.github.io/codeflairnet/2018/03/13/my-first-post-on-medium/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2018/03/13/my-first-post-on-medium/#respond</comments>
+				<pubDate>Tue, 13 Mar 2018 07:09:15 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=677</guid>
+				<description><![CDATA[I added my first story on medium yesterday, check it out here: https://medium.com/@sunny_sharma/does-configureawait-false-help-executing-async-await-tasks-in-parallel-98c2615f7ff8 &#160; &#160; &#160;]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2018/03/13/my-first-post-on-medium/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Awarded &#8211; Microsoft MVP 2nd time in a row</title>
+		<link>https://iamsunny.github.io/codeflairnet/2017/07/01/awarded-microsoft-mvp-2nd-time-in-a-row/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2017/07/01/awarded-microsoft-mvp-2nd-time-in-a-row/#respond</comments>
+				<pubDate>Sat, 01 Jul 2017 17:49:46 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=613</guid>
+				<description><![CDATA[Gladly sharing that I&#8217;m awarded Microsoft MVP 2nd time in a row. Thank you Microsoft for the recognition again. I want to extend my thanks to all my friends and whosoever has supported me along the way! Thank you. Microsoft Most Valuable Professional (MVP) award is given to &#8220;exceptional, independent community leaders who share their passion, technical &#8230; <a href="https://iamsunny.github.io/codeflairnet/2017/07/01/awarded-microsoft-mvp-2nd-time-in-a-row/" class="more-link">Continue reading<span class="screen-reader-text"> "Awarded &#8211; Microsoft MVP 2nd time in a row"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2017/07/01/awarded-microsoft-mvp-2nd-time-in-a-row/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>[Powershell] Azure Automation &#8211; Delete all Azure Logic Apps in a Resource Group</title>
+		<link>https://iamsunny.github.io/codeflairnet/2017/06/29/powershell-azure-automation-delete-all-azure-logic-apps-in-a-resource-group/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2017/06/29/powershell-azure-automation-delete-all-azure-logic-apps-in-a-resource-group/#respond</comments>
+				<pubDate>Thu, 29 Jun 2017 16:10:16 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Microsoft Azure]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[Azure Automation]]></category>
+		<category><![CDATA[Logic Apps]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=600</guid>
+				<description><![CDATA[In one of my recent projects I had a requirement to delete all the Logic Apps from a resource group on Azure. In this quick blog I&#8217;m sharing how to delete all the logic apps in one go inside a resource group using the following Powershell script: Prerequisites: Service Principal Account Credentials (ClientId / Secret) SubscriptionId &#8230; <a href="https://iamsunny.github.io/codeflairnet/2017/06/29/powershell-azure-automation-delete-all-azure-logic-apps-in-a-resource-group/" class="more-link">Continue reading<span class="screen-reader-text"> "[Powershell] Azure Automation &#8211; Delete all Azure Logic Apps in a Resource Group"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2017/06/29/powershell-azure-automation-delete-all-azure-logic-apps-in-a-resource-group/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>[Powershell] Export Self-Signed Certificate</title>
+		<link>https://iamsunny.github.io/codeflairnet/2017/06/14/powershell-export-self-signed-certificate/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2017/06/14/powershell-export-self-signed-certificate/#respond</comments>
+				<pubDate>Wed, 14 Jun 2017 11:09:59 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[Self-Signed Certificate]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=596</guid>
+				<description><![CDATA[&#160; $cert = New-SelfSignedCertificate -DnsName yourdomain.cloudapp.net -CertStoreLocation &#8220;cert:\LocalMachine\My&#8221; $password = ConvertTo-SecureString -String &#8220;Password@1234&#8221; -Force -AsPlainText #Generate .pfx Export-PfxCertificate -Cert $cert -FilePath &#8220;.\my-cert-file.pfx&#8221; -Password $password #Export to .cer format Export-Certificate -Type CERT -Cert $cert -FilePath .\my-cert-file.cer]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2017/06/14/powershell-export-self-signed-certificate/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>[Software Review] &#8211; Stellar Phoenix Windows Data Recovery</title>
+		<link>https://iamsunny.github.io/codeflairnet/2017/05/19/software-review-stellar-phoenix-windows-data-recovery/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2017/05/19/software-review-stellar-phoenix-windows-data-recovery/#comments</comments>
+				<pubDate>Fri, 19 May 2017 08:00:53 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Software Review]]></category>
+		<category><![CDATA[Data Recovery]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=563</guid>
+				<description><![CDATA[Data plays a very crucial role for each individual whether it is Home user or Enterprises where as  damage to your computer can  make your data unreadable and that’s where you need a good data recovery software to get you out of trouble, by recovering your valuable data. It has happened to me and I &#8230; <a href="https://iamsunny.github.io/codeflairnet/2017/05/19/software-review-stellar-phoenix-windows-data-recovery/" class="more-link">Continue reading<span class="screen-reader-text"> "[Software Review] &#8211; Stellar Phoenix Windows Data Recovery"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2017/05/19/software-review-stellar-phoenix-windows-data-recovery/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+							</item>
+		<item>
+		<title>How to: Generate Free SSL Certificate for a domain and upload on Azure  Website?</title>
+		<link>https://iamsunny.github.io/codeflairnet/2017/02/05/how-to-generate-free-ssl-certificate-for-azure-website/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2017/02/05/how-to-generate-free-ssl-certificate-for-azure-website/#respond</comments>
+				<pubDate>Sun, 05 Feb 2017 11:08:58 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Microsoft Azure]]></category>
+		<category><![CDATA[Azure Websites]]></category>
+		<category><![CDATA[Cloud]]></category>
+		<category><![CDATA[Free SSL Certificate]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=490</guid>
+				<description><![CDATA[Today  I spent nearly 2 hours browsing through the Web for ways to create an SSL Certificate for Free from Let&#8217;s Encrypt. I explored letsencrypt.org  and various other websites, and landed up on one with the easiest steps. While trying others I got stuck many times in the middle as many of them have a &#8230; <a href="https://iamsunny.github.io/codeflairnet/2017/02/05/how-to-generate-free-ssl-certificate-for-azure-website/" class="more-link">Continue reading<span class="screen-reader-text"> "How to: Generate Free SSL Certificate for a domain and upload on Azure  Website?"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2017/02/05/how-to-generate-free-ssl-certificate-for-azure-website/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>[Quick Tip]: Use Windows Explorer address bar for &#8220;commands&#8221;</title>
+		<link>https://iamsunny.github.io/codeflairnet/2017/01/28/quick-tip-use-windows-explorer-address-bar-for-commands/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2017/01/28/quick-tip-use-windows-explorer-address-bar-for-commands/#respond</comments>
+				<pubDate>Sat, 28 Jan 2017 20:09:26 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[MISC]]></category>
+		<category><![CDATA[Quick Tip]]></category>
+		<category><![CDATA[Windows Explorer]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=481</guid>
+				<description><![CDATA[Even though you&#8217;re a Windows OS user for a very long time I&#8217;m sure you would love to know this! Here&#8217;s a quick tip that you might unaware of so far. &#160; You can use Windows Explorer&#8217;s Address Bar just like you use Run Command: Under any window while browsing files on your computer just point your &#8230; <a href="https://iamsunny.github.io/codeflairnet/2017/01/28/quick-tip-use-windows-explorer-address-bar-for-commands/" class="more-link">Continue reading<span class="screen-reader-text"> "[Quick Tip]: Use Windows Explorer address bar for &#8220;commands&#8221;"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2017/01/28/quick-tip-use-windows-explorer-address-bar-for-commands/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>TypeScript Fundamentals &#8211; Session Recap</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/11/27/typescript-fundamentals-session-recap/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/11/27/typescript-fundamentals-session-recap/#respond</comments>
+				<pubDate>Sun, 27 Nov 2016 18:34:52 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Speaking]]></category>
+		<category><![CDATA[Speakings]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=457</guid>
+				<description><![CDATA[Today I participated in one of the events hosted by C# Corner, held at &#8220;C# Corner &#8211; Delhi Chapter&#8221;.  I spoke on Fundamentals of TypeScript. Below are few glimpses from the session. I also got few licenses of OzCode &#8211; A magical debugging tool for Visual Studio to distribute. We did a raffle to select the winners. Below are &#8230; <a href="https://iamsunny.github.io/codeflairnet/2016/11/27/typescript-fundamentals-session-recap/" class="more-link">Continue reading<span class="screen-reader-text"> "TypeScript Fundamentals &#8211; Session Recap"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/11/27/typescript-fundamentals-session-recap/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How to manage IIS Server online</title>
+		<link>https://iamsunny.github.io/codeflairnet/2016/10/12/how-to-manage-iis-server-online/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2016/10/12/how-to-manage-iis-server-online/#respond</comments>
+				<pubDate>Wed, 12 Oct 2016 17:48:41 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Web Hosting]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[IIS Online]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Windows]]></category>
+
+		<guid isPermaLink="false">http://www.codeflair.net/?p=430</guid>
+				<description><![CDATA[Hey folks, now it&#8217;s possible to manage your IIS (Internet Information Services) Server right from the browser. I&#8217;m here going to share the steps I was required to perform before it started running. It was simple though. Right now the service is in &#8220;Preview&#8221; mode, hope to see this launched very soon! &#8220;To start, head &#8230; <a href="https://iamsunny.github.io/codeflairnet/2016/10/12/how-to-manage-iis-server-online/" class="more-link">Continue reading<span class="screen-reader-text"> "How to manage IIS Server online"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2016/10/12/how-to-manage-iis-server-online/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

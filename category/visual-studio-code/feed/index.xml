@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Visual Studio Code &#8211; CodeFlair.Net</title>
+	<atom:link href="https://iamsunny.github.io/codeflairnet/category/visual-studio-code/feed/" rel="self" type="application/rss+xml" />
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<description>Sunny Sharma&#039;s Personal Blog!</description>
+	<lastBuildDate>
+	Wed, 05 Dec 2018 09:07:35 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1</generator>
+
+<image>
+	<url>https://iamsunny.github.io/codeflairnet/wp-content/uploads/2018/02/cropped-logo-1-32x32.png</url>
+	<title>Visual Studio Code &#8211; CodeFlair.Net</title>
+	<link>https://iamsunny.github.io/codeflairnet</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Getting Started with Visual Studio Code : Part 2</title>
+		<link>https://iamsunny.github.io/codeflairnet/2015/05/25/getting-started-with-visual-studio-code-part-2/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2015/05/25/getting-started-with-visual-studio-code-part-2/#respond</comments>
+				<pubDate>Mon, 25 May 2015 11:46:01 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Visual Studio Code]]></category>
+		<category><![CDATA[Code Editors]]></category>
+
+		<guid isPermaLink="false">http://codeflair.net/?p=234</guid>
+				<description><![CDATA[Learn how to work with Git repository in Visual Studio Code - an ultra-fast code editor!]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2015/05/25/getting-started-with-visual-studio-code-part-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Getting Started With Visual Studio Code: Part 1</title>
+		<link>https://iamsunny.github.io/codeflairnet/2015/05/25/getting-started-with-visual-studio-code-part-1/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2015/05/25/getting-started-with-visual-studio-code-part-1/#respond</comments>
+				<pubDate>Mon, 25 May 2015 11:41:30 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Visual Studio Code]]></category>
+		<category><![CDATA[Code Editors]]></category>
+
+		<guid isPermaLink="false">http://codeflair.net/?p=231</guid>
+				<description><![CDATA[Every developer has a lot to gain by using a powerful editor. Auto-complete, fast file switching and the ability to install packages for new technologies are a few of the perks that every developer enjoys utilizing. And you get all these features in Visual Studio Code. It's lightweight and ultra-fast. It's a fast editing experience, similar to what you get with brackets, Sublime Text and Atom while it's debugging and integration experience is similar to what you get with Web Storm or Visual Studio.]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2015/05/25/getting-started-with-visual-studio-code-part-1/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Introducing Visual Studio Code!</title>
+		<link>https://iamsunny.github.io/codeflairnet/2015/04/30/introducing-visual-studio-code/</link>
+				<comments>https://iamsunny.github.io/codeflairnet/2015/04/30/introducing-visual-studio-code/#respond</comments>
+				<pubDate>Wed, 29 Apr 2015 23:43:15 +0000</pubDate>
+		<dc:creator><![CDATA[Sunny Sharma]]></dc:creator>
+				<category><![CDATA[Visual Studio Code]]></category>
+		<category><![CDATA[Code Editors]]></category>
+
+		<guid isPermaLink="false">http://codeflair.net/?p=180</guid>
+				<description><![CDATA[A new choice of code editor, Visual Studio Code, where one can build and debug modern web and cloud applications. It is free and available for &#8211; Linux (I find this a good reason for mine to give Linux a try as well:)), Mac OSX, and Windows. Visual Studio Code is the first code editor, and &#8230; <a href="https://iamsunny.github.io/codeflairnet/2015/04/30/introducing-visual-studio-code/" class="more-link">Continue reading<span class="screen-reader-text"> "Introducing Visual Studio Code!"</span></a>]]></description>
+						<wfw:commentRss>https://iamsunny.github.io/codeflairnet/2015/04/30/introducing-visual-studio-code/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>
